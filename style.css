@@ -10,6 +10,13 @@ body {
     font-family: monospace;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 nav {
     width: 80%;
     margin: 0 auto;
@@ -56,6 +63,7 @@ nav ul li a:hover {
     .main-parent {
         animation: ease-out 1s;
         width: 75%;
+        background-color: green;
     }
     nav {
         width: 95%;
@@ -63,6 +71,14 @@ nav ul li a:hover {
     #main-logo {
         width: 80px;
         height: 40px;
+    }
+}
+
+@media(min-width: 600px) {
+    nav,
+    .main-parent {
+        width: 90%;
+        animation: ease-out 1s;
     }
 }
 
@@ -114,18 +130,18 @@ p {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 
 .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* background-color: #33333380; */
+    /* background-color: #333333a0; */
+    background-color: rgba(219, 225, 232, 1);
     /* background: linear-gradient(60deg, #000000, #af426110, #af4261, #af4261); */
-    transition: 1s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
-.sticky+.main-parent {
-    padding-top: 60px;
+
+/* .sticky, */
+
+.main-parent {
+    padding-top: 90px;
 }
