@@ -10,8 +10,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333333a0;
-    /* background-color: rgba(219, 225, 232, 1); */
+    /* background-color: #333333a0; */
+    background-color: rgba(219, 225, 232, 1);
     /* background: linear-gradient(60deg, #000000, #af426110, #af4261, #af4261); */
     transition: 0.8s ease-in-out;
 }
