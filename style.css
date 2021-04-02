@@ -74,7 +74,6 @@ nav ul li a:hover {
     margin: 0 auto;
     text-align: left;
     padding: 16px;
-    background-color: #af4261;
 }
 
 h1 {
@@ -121,6 +120,5 @@ p {
     .main-parent {
         width: 90%;
         animation: ease-out 1s;
-        background-color: aqua;
     }
 }
