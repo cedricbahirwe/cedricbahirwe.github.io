@@ -1,0 +1,114 @@
+body {
+    font-size: 21px;
+    min-height: 100vh;
+    /* background-image: url('image.jpg'); */
+    background-image: url('bg-morph.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: monospace;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+#main-logo {
+    width: 100px;
+    height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkslategray;
+    transition: 0.8s;
+    transition-property: color, transform;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+nav ul li a:hover {
+    transform: scale(1.3);
+    background: linear-gradient(60deg, #000000, #af4261, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-parent {
+    /* width: 65%; */
+    width: 45%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 16px;
+}
+
+@media(max-width: 800px) {
+    .main-parent {
+        animation: ease-out 1s;
+        width: 75%;
+    }
+    nav {
+        width: 95%;
+    }
+    #main-logo {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+    nav {
+        width: 100%;
+    }
+    nav ul li {
+        padding: 10px 0;
+    }
+    #main-logo {
+        display: none;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-size: 70px;
+    background: linear-gradient(0deg, #000000, #af4261, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 1rem;
+    color: darkslategray;
+}
+
+.blog-post {
+    /* background-color: darkviolet; */
+}
+
+header {
+    padding: 50px 0;
+    position: relative;
+}
+
+.blog-post span {
+    font-size: 0.7rem;
+    padding-bottom: -20px;
+    color: gray;
+}
