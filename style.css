@@ -97,7 +97,7 @@ nav ul li a:hover {
     }
 }
 
-@media(min-width: 600px) and (max-width: 799px) {
+@media(min-width: 400px) and (max-width: 799px) {
     nav,
     .main-parent {
         width: 90%;
