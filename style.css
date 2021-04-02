@@ -63,10 +63,9 @@ nav ul li a:hover {
     .main-parent {
         animation: ease-out 1s;
         width: 75%;
-        background-color: green;
     }
     nav {
-        width: 95%;
+        width: 75%;
     }
     #main-logo {
         width: 80px;
@@ -74,7 +73,7 @@ nav ul li a:hover {
     }
 }
 
-@media(min-width: 600px) {
+@media(min-width: 600px) and (max-width: 799px) {
     nav,
     .main-parent {
         width: 90%;
@@ -139,9 +138,6 @@ p {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
-
-/* .sticky, */
-
-.main-parent {
+.sticky+.main-parent {
     padding-top: 90px;
 }
