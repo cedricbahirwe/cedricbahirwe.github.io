@@ -78,7 +78,6 @@ nav {
 #main-logo {
     width: 100px;
     height: 50px;
-    background-color: var(--main-black);
 }
 
 nav ul li a {
@@ -86,10 +85,6 @@ nav ul li a {
     color: darkslategray;
     transition: 0.8s;
     transition-property: color, transform;
-}
-
-.sticky+nav ul li a {
-    color: red;
 }
 
 nav ul li {
