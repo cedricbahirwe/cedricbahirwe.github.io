@@ -1,0 +1,56 @@
+:root {
+    --primary: rgba(255, 255, 255, 0.8);
+    --green-dark: #1a936f;
+    --main-red: rgba(164, 0, 25, 1);
+    /* background-color: rgba(219, 225, 232, 1); */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(34, 34, 34, 1);
+    color: var(--primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.blog-post .blog-intro {
+    color: white;
+    font-size: 0.8em;
+    line-height: 30px;
+}
+
+.blog-post .post-date {
+    color: white;
+    font-weight: 200;
+}
+
+figure {
+    margin: 10 auto;
+}
+
+figure img {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 6px 0;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 1em;
+}

@@ -1,6 +1,7 @@
 :root {
     --primary: rgba(255, 255, 255, 0.8);
     --green-dark: #1a936f;
+    --main-red: rgba(164, 0, 25, 1);
     /* background-color: rgba(219, 225, 232, 1); */
     margin: 0;
     padding: 0;
@@ -20,7 +21,13 @@ h6 {
 
 a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--main-red);
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--main-red);
 }
 
 header {
@@ -105,16 +112,37 @@ nav ul li a:hover {
     padding: 16px;
 }
 
-h1 {
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+
+/* h1 {
     margin: 0;
     font-size: 3.5em;
     background: linear-gradient(0deg, #000000, #af4261, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+} */
+
+h1 {
+    font-size: 2.65rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    font-weight: 500 !important;
     padding-bottom: 1rem;
 }
 
@@ -123,14 +151,16 @@ h3 {
 }
 
 .blog-post h2 a {
+    color: var(--primary);
     transition: 0.3s;
 }
 
 .blog-post h2 a:hover {
+    text-decoration: none;
     opacity: 0.7;
 }
 
-.blog-post .post-tag {
+.blog-post .post-category {
     font-size: 10px !important;
     color: var(--green-dark) !important;
     padding: 5px 10px;
@@ -177,6 +207,6 @@ h3 {
     .main-parent {
         width: 90%;
         animation: ease-out 1s;
-        background-color: var(--green-dark);
+        /* background-color: var(--green-dark); */
     }
 }
