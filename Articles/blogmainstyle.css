@@ -34,18 +34,3 @@ figcaption {
     padding: 2px;
     text-align: center;
 }
-
-footer {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-footer img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    padding: 1em;
-}

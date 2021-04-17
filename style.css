@@ -10,6 +10,10 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+    font-size: 21px;
+}
+
 h1,
 h2,
 h3,
@@ -19,10 +23,14 @@ h6 {
     margin: 0;
 }
 
+p {
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
     color: var(--main-red);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 a:hover {
@@ -30,37 +38,31 @@ a:hover {
     color: var(--main-red);
 }
 
-header {
-    background-color: rgba(219, 225, 232, 1)
+h1 {
+    font-size: 2.65rem;
 }
 
+h2 {
+    font-size: 2.4rem;
+    font-weight: 500 !important;
+    padding-bottom: 1rem;
+}
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+h3 {
+    font-size: 1.9rem;
+}
 
-.sticky {
+header {
+    background-color: rgba(219, 225, 232, 1);
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    /* background-color: #333333a0; */
-    background-color: rgba(219, 225, 232, 1);
-    /* background: linear-gradient(60deg, #000000, #af426110, #af4261, #af4261); */
-    transition: 0.8s ease-in-out;
+    margin-bottom: 2rem;
 }
 
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-
-.sticky+main {
-    padding-top: 100px;
-}
-
-body {
-    font-size: 21px;
-}
-
-nav {
-    width: 80%;
+header nav {
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -75,8 +77,10 @@ nav {
 
 nav ul li a {
     text-decoration: none;
+    /* TODO: Use mainBlack color */
     color: darkslategray;
-    transition: 0.8s;
+    transition: 0.5s;
+    /* Don't know what this does */
     transition-property: color, transform;
 }
 
@@ -97,45 +101,29 @@ main {
     width: 100%;
     margin: 0 auto;
     text-align: left;
-    padding: 16px;
+    padding: 1rem;
+    /* For the Navigation Bar */
+    padding-top: 100px;
 }
 
 footer {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 footer img {
-    width: 120px;
-    height: 120px;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
-    padding: 1em;
+    padding: 10px;
+    background-color: var(--main-red);
 }
 
-
-/* h1 {
-    margin: 0;
-    font-size: 3.5em;
-    background: linear-gradient(0deg, #000000, #af4261, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
-h1 {
-    font-size: 2.65rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-    font-weight: 500 !important;
-    padding-bottom: 1rem;
-}
-
-h3 {
-    font-size: 1.9rem;
+footer p {
+    font-size: 1.2em;
 }
 
 .blog-post h2 a {
@@ -149,9 +137,10 @@ h3 {
 }
 
 .blog-post .post-category {
-    font-size: 10px !important;
+    font-size: 1rem;
     color: var(--green-dark) !important;
     padding: 5px 10px;
+    height: 30px;
     border: 1px solid var(--green-dark);
     border-radius: 15px;
     text-transform: uppercase;
@@ -173,8 +162,6 @@ h3 {
 }
 
 .blog-post span {
-    font-size: 1em;
-    padding-bottom: -20px;
     color: gray;
 }
 
@@ -247,6 +234,6 @@ h3 {
         width: 50%;
     }
     p {
-        font-size: 1em !important;
+        font-size: 1rem !important;
     }
 }
