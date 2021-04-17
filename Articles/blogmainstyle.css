@@ -1,9 +1,8 @@
 :root {
-    --primary: rgba(255, 255, 255, 0.8);
+    --primary: #ccc;
     --green-dark: #1a936f;
     --main-red: rgba(164, 0, 25, 1);
-    --main-black: rgba(17, 17, 17, 255);
-    color: var(--primary);
+    --main-black: #111;
 }
 
 .blog-post .blog-intro {
