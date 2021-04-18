@@ -66,28 +66,31 @@ header nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    justify-items: flex-end;
     align-items: center;
+    word-spacing: 0;
 }
 
 #main-logo {
     width: 100px;
     height: 50px;
+    object-fit: contain;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
 nav ul li a {
+    padding: 0 10px;
     text-decoration: none;
     /* TODO: Use mainBlack color */
     color: darkslategray;
     transition: 0.5s;
     /* Don't know what this does */
     transition-property: color, transform;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 9px;
+    /* font-size: 1.2rem; */
 }
 
 nav ul li a:hover {
@@ -136,16 +139,6 @@ footer p {
     opacity: 0.7;
 }
 
-.blog-post .post-category a {
-    font-size: 0.75rem;
-    color: var(--green-dark);
-    padding: 5px 10px;
-    height: 30px;
-    border: 1px solid var(--green-dark);
-    border-radius: 15px;
-    text-transform: uppercase;
-}
-
 .blog-post .post-category {
     font-size: 0.75rem;
     color: var(--green-dark);
@@ -185,7 +178,17 @@ footer p {
     main,
     footer {
         width: 90%;
-        /* background-color: red; */
+    }
+    main {
+        padding-top: 250px;
+    }
+    header nav {
+        text-align: center;
+        display: block;
+        padding-top: 1em;
+    }
+    header nav ul {
+        font-size: 2em;
     }
 }
 
@@ -203,7 +206,6 @@ footer p {
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     main {
         width: 100%;
-        background-color: rebeccapurple;
     }
 }
 
@@ -221,7 +223,6 @@ footer p {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     main {
         width: 100%;
-        background-color: rebeccapurple;
     }
 }
 
