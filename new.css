@@ -69,7 +69,7 @@ ul {
   
   li a {
     display: block;
-    color: #333;
+    color: gray;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -79,11 +79,11 @@ ul {
   }
 
   .active {
-    /* background-color: #000; */
+    background-color: #000;
     color: white !important;
   }
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    color: #000;
   }
