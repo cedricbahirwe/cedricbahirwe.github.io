@@ -1,0 +1,89 @@
+:root {
+    --color_0: 255,255,255;
+    --color_1: 255,255,255;
+    --color_2: 0,0,0;
+    --color_3: 237,28,36;
+    --color_4: 0,136,203;
+    --color_5: 255,203,5;
+    --color_6: 114,114,114;
+    --color_7: 176,176,176;
+    --color_8: 255,255,255;
+    --color_9: 114,114,114;
+    --color_10: 176,176,176;
+    --color_11: 255,255,255;
+    --color_12: 218,218,218;
+    --color_13: 151,149,149;
+    --color_14: 104,104,104;
+    --color_15: 43,43,43;
+    --color_16: 172,225,227;
+    --color_17: 135,197,199;
+    --color_18: 89,168,171;
+    --color_19: 6,138,143;
+    --color_20: 3,69,71;
+    --color_21: 173,197,221;
+    --color_22: 133,160,187;
+    --color_23: 87,120,154;
+    --color_24: 16,68,120;
+    --color_25: 8,34,60;
+    --color_26: 242,215,194;
+    --color_27: 194,172,155;
+    --color_28: 145,129,116;
+    --color_29: 97,86,78;
+    --color_30: 48,43,39;
+    --color_31: 254,209,198;
+    --color_32: 253,186,170;
+    --color_33: 252,119,86;
+    --color_34: 168,79,57;
+    --color_35: 84,40,29;
+    --font_0: normal normal normal 17px/1.4em 'eb garamond',serif;
+    --font_1: normal normal normal 14px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    --font_2: normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    --font_3: normal normal normal 60px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    --font_4: normal normal normal 39px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    --font_5: normal normal normal 37px/1.4em 'eb garamond',serif;
+    --font_6: normal normal normal 20px/1.4em 'eb garamond',serif;
+    --font_7: normal normal bold 17px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    --font_8: normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    --font_9: normal normal normal 12px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    --font_10: normal normal normal 10px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    --wix-ads-height: 0px;
+    --wix-ads-top-height: 0px;
+    --site-width: 980px;
+    --above-all-z-index: 100000;
+    --minViewportSize: 320;
+    --maxViewportSize: 1920;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    width: var(--site-width);
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* font-family: var(--font_7); */
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .active {
+    /* background-color: #000; */
+    color: white !important;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
