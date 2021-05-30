@@ -269,9 +269,16 @@ footer a {
     -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 1280px) {
+    header nav, .content {
+        width: 85%;
+        transition: ease-in-out .3s;
+    }
+}
+
 @media (max-width: 1080px) {
     header nav, .content {
-        width: 90%;
+        width: 98%;
         transition: ease-in-out .3s;
     }
 }
