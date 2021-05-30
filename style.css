@@ -112,6 +112,10 @@ ul {
       /* position: relative; */
       margin: 2em 0;
   }
+
+  .project-container:last-of-type {
+    background: url('tictactoe.JPG') #333;
+  }
   .project-container a {
       text-decoration: none;
   }
