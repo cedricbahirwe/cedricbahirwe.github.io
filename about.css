@@ -1,4 +1,4 @@
-
+@font-face { font-family: Quicksand; src: url('Quicksand-VariableFont_wght.ttf'); }
 
 iframe {
     width: 100%;
@@ -12,11 +12,9 @@ iframe {
 .author {
     height: 55vh;
     width: 100%;
-    background: url(authbg.jpeg) #333;
     background-size: cover;
-    background-repeat: no-repeat;
     /* background-attachment: scroll; */
-    background-position: center;
+    background: #333 url(authbg.jpeg) no-repeat center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -24,7 +22,7 @@ iframe {
     /* background-color: red; */
 }
 .author img {
-    width: 300;
+    width: 300px;
     height: auto;
 }
 .author h1 {

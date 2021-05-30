@@ -54,8 +54,8 @@ header nav {
     text-align: right;
 }
 
-.author-title a { 
-    font-family: Quicksand;
+.author-title a {
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
 }
