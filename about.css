@@ -1,0 +1,33 @@
+
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    /* background: yellow; */
+    margin: auto;
+    border: none;
+}
+
+
+.author {
+    height: 55vh;
+    width: 100%;
+    background: url(authbg.jpeg) #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: red; */
+}
+.author img {
+    width: 300;
+    height: 200;
+}
+.author h1 {
+    color: white;
+    font-weight: 900;
+}

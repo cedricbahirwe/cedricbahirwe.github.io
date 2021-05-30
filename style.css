@@ -120,7 +120,7 @@ ul {
       text-decoration: none;
   }
 
-  .project h1 {
+  h1 {
     font-family: Quicksand;
     font-size: 40px;
     /* text-transform: uppercase; */
