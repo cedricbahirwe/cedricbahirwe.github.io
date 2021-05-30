@@ -25,7 +25,7 @@ iframe {
 }
 .author img {
     width: 300;
-    height: 200;
+    height: auto;
 }
 .author h1 {
     color: white;
