@@ -1,74 +1,146 @@
-<html>
-
+<html lang="en">
 <head>
     <link rel="stylesheet" href="normalize.css">
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="abclo.png" />
-    <title> abc swift </title>
-
+    <title>Cédric Bahirwe</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <div class="container content">
-        <header>
-            <nav>
-                <img src="../abclo.png" alt="" id="main-logo">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="https://github.com/cedricbahirwe" target="_blank">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/cedricbahirwe" target="_blank">About Me</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="blog-post">
-                <h2><a href="Articles/mapbox.html">How to install a Mapbox in an iOS Project</a></h2>
-                <div>
-                    </span><a href="#" class="post-category">Feature</a>
-                    <span class="dot"></span>
-                    <span class="post-date">April 30, 2021</span>
+    <header>
+        <nav id="navbar">   
+            <ul>
+                <li><a href="../new.html">Portfolio</a></li>
+                <li><a href="https://twitter.com/cedricbahirwe" target="_blank"> News</a></li>
+                <li><a href="https://www.linkedin.com/in/cedricbahirwe" target="_blank">Github</a></li>
+                <li><a href="https://github.com/cedricbahirwe" target="_blank">About</a></li>
+            </ul>
+
+            <div class="author-header">
+                <div class="author-title">
+                    <a>Cédric Bahirwe</a>
+                    <span>iOS Developer/ Software Enginner</span>
                 </div>
-                <p>Magna fringilla urna porttitor rhoncus dolor purus. Malesuada bibendum arcu vitae elementum. Purus sit amet volutpat consequat. </p>
+                <img src="author.png" width="60" height="60" alt="Github">
             </div>
+        </nav>
+    </header>
 
-            <div class="blog-post">
-                <h2><a href="Articles/mapbox.html">How to install a Mapbox in an iOS Project</a></h2>
-                <div>
-                    </span><a href="#" class="post-category">Feature</a>
-                    <span class="dot"></span>
-                    <span class="post-date">April 30, 2021</span>
+
+    <main>
+
+        <div class="profile">
+            <div class="slider-show middle">
+                <div class="slides">
+                    <label for="r1"></label><input type="radio" name="r" id="r1" checked>
+                    <label for="r2"></label><input type="radio" name="r" id="r2">
+                    <label for="r3"></label><input type="radio" name="r" id="r3">
+                    <label for="r4"></label><input type="radio" name="r" id="r4">
+                    <label for="r5"></label><input type="radio" name="r" id="r5">
+
+                    <div class="slide">
+                        <img src="analog.jpeg" alt="">
+                    </div>
+                    <div class="slide s1">
+                        <img src="tec.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="analog.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="1.0.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <video src="https://youtu.be/wGixQPuG1GY"  controls autoplay muted></video>
+                    </div>
                 </div>
-                <p>Magna fringilla urna porttitor rhoncus dolor purus. Malesuada bibendum arcu vitae elementum. Purus sit amet volutpat consequat. </p>
-            </div>
-            <div class="blog-post">
-                <h2><a href="Articles/mapbox.html">How to install a Mapbox in an iOS Project</a></h2>
-                <div>
-                    </span><a href="#" class="post-category">Feature</a>
-                    <span class="dot"></span>
-                    <span class="post-date">April 30, 2021</span>
+        
+        
+                <div class="navigate">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
                 </div>
-                <p>Magna fringilla urna porttitor rhoncus dolor purus. Malesuada bibendum arcu vitae elementum. Purus sit amet volutpat consequat. </p>
             </div>
+        </div>
 
-        </main>
 
-        <footer>
+        <div class="content">
+            
 
-            <img src="../author.png" alt="Cédric Bahirwe">
-            <!-- <img class="avatar" alt="cedricbahirwe" width="100" height="100" data-proofer-ignore="true" src="https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=100" srcset="https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=100 1x, https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=200 2x, https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=300 3x, https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=400 4x"> -->
-            <p>Hi there! My name is Cédric B䷢hirwe.</p>
-            <p>I'm a Swift Developer👨🏽‍💻, SwiftUI enthusiast🤖</p>
-            <p>
-                Reach out or follow me on
-                <a target="_blank" href="https://twitter.com/cedricbahirwe">Twitter</a> or <a target="_blank" href="https://github.com/cedricbahirwe">Github.</a>
-            </p>
-            <p>Cédric Bhirwe &copy 2021. All rights reserved.</p>
-        </footer>
-        <script src="main.js"></script>
-    </div>
+            <div class="projects">
+                <!-- AppLock -->
+                <div class="project-container">
+                    <a href="https://github.com/cedricbahirwe/AppLock" target="_blank">
+                        <div class="project">
+                            <h1> AppLock </h1>
+                            <p>
+                                AppLock is a simple SwiftUI framework that makes it easy to create a PinCode user interface. It provides a struct, 
+                                "AppLockView", that can be shown inside a view or a sheet for better user experience.
+                            </p>
+                            <div class="tags">
+                                <span>SwiftUI</span>
+                                <span>SPM</span>
+                                <span>Authentication</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- DOIT -->
+                <div class="project-container">
+                    <a href="https://github.com/cedricbahirwe/DOIT" target="_blank">
+                        <div class="project">
+                            <h1> DOIT </h1>
+                            <p>
+                                A TO-DO app with ability to Create, Update, Read, Delete tasks and save tasks on local storage.
 
+                            </p>
+                            <div class="tags">
+                                <span>SwiftUI</span>
+                                <span>UserDefaults</span>
+                                <span>CoreData</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-container">
+                    <a href="https://github.com/cedricbahirwe/TicTacToe" target="_blank">
+                        <div class="project">
+                            <h1> TicTacToe </h1>
+                            <p>
+                                A simple game using a matrix agnostic approach
+                            </p>
+                            <div class="tags">
+                                <span>SwiftUI</span>
+                                <span>Agnostic Matrix Approach</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+
+        <img src="../author.png" alt="Cédric Bahirwe">
+        <!-- <img class="avatar" alt="cedricbahirwe" width="100" height="100" data-proofer-ignore="true" src="https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=100" srcset="https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=100 1x, https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=200 2x, https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=300 3x, https://avatars2.githubusercontent.com/cedricbahirwe?v=3&amp;s=400 4x"> -->
+        <p>Hi there! My name is Cédric B䷢hirwe.</p>
+        <p>I'm a Swift Developer👨🏽‍💻, SwiftUI enthusiast🤖</p>
+        <p>
+            Reach out or follow me on
+            <a target="_blank" href="https://twitter.com/cedricbahirwe">Twitter</a> or <a target="_blank" href="https://github.com/cedricbahirwe">Github.</a>
+        </p>
+        <p>Cédric Bhirwe &copy 2021. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
-
+</body>
+</body>
 </html>
