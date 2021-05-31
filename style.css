@@ -310,3 +310,8 @@ footer a {
         justify-content: space-between;
     }
  } 
+
+
+ .hidden {
+     display: none;
+ }
