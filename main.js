@@ -27,10 +27,7 @@ for(var i = 0; i < inputs.length; i++){
   };
 
   if (window.mobileCheck()) {
-      const profile = document.getElementsByClassName('profile')[0];
-      const main  = document.getElementsByTagName('main')[0];
-      main.style.paddingTop = "185px";
-      profile.classList.add('hidden');
+      console.log("You're on Phone.")
   } else {
     console.log("You're safe on PC.")
   }
