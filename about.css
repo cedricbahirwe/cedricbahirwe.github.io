@@ -68,8 +68,7 @@ main h3 {
 
  .hot-project {
     text-align: center;
-     /* background: chartreuse; */
-    width: 200px;
+    width: 100%;
     transition: .4s all;
     margin: 7px;
  }
