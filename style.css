@@ -7,7 +7,7 @@
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
 }
 header {
@@ -123,9 +123,7 @@ ul {
   }
 
   h1 {
-    font-family: Quicksand;
     font-size: 40px;
-    /* text-transform: uppercase; */
   }
 
   .project{ 
@@ -260,7 +258,7 @@ footer img {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     background-color: var(--main-red);
 }
 
@@ -310,3 +308,8 @@ footer a {
         justify-content: space-between;
     }
  } 
+
+
+ .hidden {
+     display: none;
+ }
