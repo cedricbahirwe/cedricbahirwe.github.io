@@ -60,19 +60,48 @@ main h3 {
     text-align: center;
 }
  .hot-projects {
-     width: 100%;
-     display: inline-flex;
-     align-items: center;
-     justify-content: space-evenly;
- }
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin: auto auto 100px;
+}
+
  .hot-project {
-     text-align: center;
+    text-align: center;
      /* background: chartreuse; */
-     /* width: 200px; */
+    width: 200px;
+    transition: .4s all;
+    margin: 7px;
  }
+
+.hot-project:hover {
+    color: var(--main-red);
+    transform: scale(1.05);
+}
+ 
  .hot-project img {
      width: 200px;
      height: 200px;
      border-radius: 10px;
      background: white;
-  }
+  } 
+
+  @media screen and (max-width: 992px) {
+    .hot-projects{
+        width: 90%;
+        margin: auto;
+        grid-template-columns: repeat(3,auto);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hot-projects {
+        grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media screen and  (max-width: 500px){
+    .hot-projects {
+        grid-template-columns: repeat(1,auto);
+    }
+}
