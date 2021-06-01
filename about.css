@@ -1,5 +1,8 @@
 @font-face { font-family: Quicksand; src: url('Quicksand-VariableFont_wght.ttf'); }
 
+:root {
+    --main-red: #a40019;
+}
 iframe {
     width: 100%;
     height: 100vh;
@@ -10,7 +13,7 @@ iframe {
 
 
 .author {
-    height: 55vh;
+    height: 400px;
     width: 100%;
     /* background-attachment: scroll; */
     background: #333 url(authbg.jpeg) no-repeat center;
@@ -19,6 +22,7 @@ iframe {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    /* padding-bottom: 80px; */
     /* background-color: red; */
 }
 .author img {
@@ -29,3 +33,46 @@ iframe {
     color: white;
     font-weight: 900;
 }
+
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 30px;
+}
+.intro, .contact {
+    width: 68%;
+    margin: auto;
+    text-align: center;
+}
+a {
+    color: var(--main-red);
+    text-decoration: none;
+}
+
+@media (max-width:800px) { 
+    .intro {
+        width: 90%;
+    }
+ } 
+
+main h3 {
+    text-align: center;
+}
+ .hot-projects {
+     width: 100%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ .hot-project {
+     text-align: center;
+     /* background: chartreuse; */
+     /* width: 200px; */
+ }
+ .hot-project img {
+     width: 200px;
+     height: 200px;
+     border-radius: 10px;
+     background: white;
+  }
