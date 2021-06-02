@@ -14,8 +14,8 @@
 
 ## ✍🏽 TODOs 💻
 
-- Work on Better Standard Design ( Responsiveness, Colors, 
-- Build project with Open Source Purpose thinking (Provide a ready to go website which allows more customizations if needed).
+- Work on Better Standard Design ( Responsiveness, Colors, ...)
+- Build project with Open Source Design thinking (Provide a ready to go website which allows more customizations if needed).
 - Work on SEO ( Search Engine Optimazation ) and Semantic.
 
 ## 🔐 Future Features:
