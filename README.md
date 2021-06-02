@@ -8,7 +8,8 @@
 - 💬 Ask me about `Swift` and `iOS`
 
 
-### 🎉🎉🎊📖The idea behind this project is to provide a ready-made fully customizable website for developers as well as non-developers, to showcase their portfolio and also have the ability to do blogging.
+### 🎉📖The idea behind this project is to provide a ready-made fully customizable website for developers as well as non-developers, to showcase their portfolio and also have the ability to do blogging.🎉
+
 
 
 ## ✍🏽 TODOs 💻
