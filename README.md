@@ -23,3 +23,16 @@
 - Build a stable version of the webiste with a modern technology/framework (thinking of `React` for front-end)
 - Implement interactive Basic Bot chating
 - Implement Localization and Translation. (Thinking of `Machine translation` or `Human Translation`
+
+
+## Contribute
+
+We would love you for the contribution to this project, check the ``LICENSE`` file for more info.
+
+## Meta
+
+Cédric Bahirwe – [@cedricbahirwe](https://twitter.com/cedricbahirwe) – cedbahirwe@gmail.com
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[https://github.com/cedricbahirwe](https://github.com/cedricbahirwe)
