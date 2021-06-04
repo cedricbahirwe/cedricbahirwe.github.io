@@ -2,14 +2,17 @@
     --mainfgColor: white;
 }
 
-@font-face { font-family: Quicksand; src: url('Quicksand-VariableFont_wght.ttf'); } 
-
+@font-face {
+    font-family: Quicksand;
+    src: url('Fonts/Quicksand-VariableFont_wght.ttf');
+}
 
 
 body {
     font-family: 'Quicksand', sans-serif;
 
 }
+
 header {
     position: fixed;
     top: 0;
@@ -19,9 +22,15 @@ header {
     z-index: 2;
 }
 
-main{
+main {
     padding-top: 185px;
 }
+
+hr {
+    width: 300px;
+    color: #a40019;
+}
+
 .content {
     width: 68%;
     margin: auto;
@@ -42,11 +51,13 @@ header nav {
     display: flex;
     align-items: center;
 }
+
 .author-header img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
+
 .author-title {
     display: flex;
     flex-direction: column;
@@ -60,22 +71,23 @@ header nav {
     font-size: 1.5em;
 }
 
-.author-title span { 
-    font-family: Quicksand;
+.author-title span {
+    font-family: Quicksand, sans-serif;
     font-weight: 200;
     font-size: 1.3em;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
- }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: gray;
     text-align: center;
@@ -84,57 +96,58 @@ ul {
     /* font-family: var(--font_7); */
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-  }
+}
 
-  .active {
+.active {
     background-color: #000;
     color: white !important;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
     color: #000;
-  }
+}
 
-
-  p {
-    font-family: Quicksand;
+p {
+    font-family: Quicksand, sans-serif;
     font-size: 1.5em;
     line-height: 1.4;
-  }
+}
 
-  .project-container {
+.project-container {
 
     width: 100%;
     height: 500px;
-    background: url('analog.jpeg') #333;
+    background: url('Images/analog.jpeg') #333;
     display: flex;
     align-items: center;
     justify-content: center;
-      /* position: relative; */
-      margin: 2em 0;
-  }
+    /* position: relative; */
+    margin: 2em 0;
+}
 
-  .project-container:last-of-type {
-    background: url('tictactoe.JPG') #333;
-  }
-  .project-container a {
-      text-decoration: none;
-  }
+.project-container:last-of-type {
+    background: url('Images/tictactoe.jpg') #333;
+}
 
-  h1 {
+.project-container a {
+    text-decoration: none;
+}
+
+h1 {
     font-size: 40px;
-  }
+}
 
-  .project{ 
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      color: white;
-  }
-  .project .tags {
+.project {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.project .tags {
     margin-top: 2rem;
-  }
+}
 
 .project .tags span {
     border: 1px solid black;
@@ -143,14 +156,14 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 
-    border-image-source: linear-gradient(to right, #af4261 30%, white 100%); 
+    border-image-source: linear-gradient(to right, #af4261 30%, white 100%);
     border-image-slice: 5;
 }
 
 
-  /* Style the inputs */
+/* Style the inputs */
 
-  input {
+input {
     border-radius: 0 !important;
     border: none !important;
     box-shadow: none;
@@ -171,6 +184,7 @@ ul {
     overflow: hidden;
     transition: ease-in-out .3s;
 }
+
 /* .slider-show:hover {
     box-shadow: 0 5px 15px #FFF;
     width: 805px;
@@ -181,6 +195,7 @@ ul {
     width: 100%;
     height: 500px;
 }
+
 .middle {
     position: absolute;
     top: 50%;
@@ -196,6 +211,7 @@ ul {
     transform: translateX(-50%);
     display: flex;
 }
+
 .bar {
     width: 50px;
     height: 10px;
@@ -204,7 +220,11 @@ ul {
     cursor: pointer;
     transition: 0.4s;
 }
-.bar:hover {background: #fff}
+
+.bar:hover {
+    background: #fff
+}
+
 input[name="r"] {
     position: absolute;
     visibility: hidden;
@@ -228,7 +248,8 @@ input[name="r"] {
     background-color: #000;
 
 }
-.slide video  {
+
+.slide video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -238,12 +259,31 @@ video[poster] {
     width: 100%;
     height: 100%;
 }
-#r1:checked ~ .s1 {margin-left:  0; transition: all 1s}
-#r2:checked ~ .s1 {margin-left: -20%; transition: all 1s}
-#r3:checked ~ .s1 {margin-left: -40%; transition:all 1s}
-#r4:checked ~ .s1 {margin-left: -60%; transition:all 1s}
-#r5:checked ~ .s1 {margin-left: -80%; transition:all 1s}
 
+#r1:checked ~ .s1 {
+    margin-left: 0;
+    transition: all 1s
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+    transition: all 1s
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+    transition: all 1s
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+    transition: all 1s
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+    transition: all 1s
+}
 
 
 /* Footer Styling */
@@ -287,7 +327,7 @@ footer a {
     }
 }
 
-@media (max-width:800px) { 
+@media (max-width: 800px) {
     header nav, .content {
         width: 98%;
         flex-direction: column-reverse;
@@ -297,19 +337,22 @@ footer a {
     .author-title {
         text-align: left;
     }
+
     header ul {
         width: inherit;
     }
+
     header ul li {
         width: 24%;
     }
+
     .author-header {
         width: inherit;
         justify-content: space-between;
     }
- } 
+}
 
 
- .hidden {
-     display: none;
- }
+.hidden {
+    display: none;
+}

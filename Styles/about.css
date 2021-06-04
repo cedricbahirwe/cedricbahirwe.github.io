@@ -1,4 +1,4 @@
-@font-face { font-family: Quicksand; src: url('Quicksand-VariableFont_wght.ttf'); }
+@font-face { font-family: Quicksand; src: url('../Fonts/Quicksand-VariableFont_wght.ttf'); }
 
 :root {
     --main-red: #a40019;
@@ -16,7 +16,7 @@ iframe {
     height: 400px;
     width: 100%;
     /* background-attachment: scroll; */
-    background: #333 url(authbg.jpeg) no-repeat center;
+    background: #333 url(../Images/authbg.jpeg) no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
