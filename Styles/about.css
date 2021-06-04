@@ -2,7 +2,7 @@
 .author {
     height: 400px;
     width: 100%;
-    background: #333 url(authbg.jpeg) no-repeat center;
+    background: #333 url(../images/authbg.jpeg) no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -34,11 +34,11 @@ a {
     text-decoration: none;
 }
 
-@media (max-width:800px) { 
+@media (max-width:800px) {
     .intro {
         width: 90%;
     }
- } 
+ }
 
 main h3 {
     text-align: center;
@@ -61,7 +61,7 @@ main h3 {
     color: var(--main-red);
     transform: scale(1.05);
 }
- 
+
  .hot-project img {
      width: 200px;
      height: 200px;
