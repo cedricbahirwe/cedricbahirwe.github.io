@@ -115,17 +115,22 @@ ul {
     color: #000;
   }
 
-
 .project-container {
-
     width: 100%;
     height: 500px;
-    background: url('analog.jpeg') #333;
+    background:#333;
     display: flex;
     align-items: center;
     justify-content: center;
-      /* position: relative; */
       margin: 2em 0;
+  }
+
+  .project-container:nth-of-type(1) {
+    background: url('analog.jpeg');
+  }
+
+  .project-container:nth-of-type(2) {
+    background: url('/projects-imgs/doit.jpeg') no-repeat #333;
   }
 
   .project-container:last-of-type {
