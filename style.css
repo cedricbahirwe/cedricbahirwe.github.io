@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: Quicksand;
-    src: url('Fonts/Quicksand-VariableFont_wght.ttf');
+    src: url('fonts/Quicksand-VariableFont_wght.ttf');
 }
 
 body {
@@ -133,7 +133,7 @@ li a {
 }
 
 .project-container:nth-of-type(1) {
-    background: url('Images/analog.jpeg');
+    background: url('images/analog.jpeg');
 }
 
 .project-container:nth-of-type(2) {
@@ -141,7 +141,7 @@ li a {
 }
 
 .project-container:last-of-type {
-    background: url('Images/tictactoe.jpg') ;
+    background: url('images/tictactoe.jpg') ;
 }
 
 .project-container a {

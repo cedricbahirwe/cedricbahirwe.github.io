@@ -2,7 +2,7 @@
 .author {
     height: 400px;
     width: 100%;
-    background: #333 url(../Images/authbg.jpeg) no-repeat center;
+    background: #333 url(../images/authbg.jpeg) no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
