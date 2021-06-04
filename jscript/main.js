@@ -9,8 +9,8 @@ const navbar = document.getElementById('navbar')
 let firstAnchor = document.getElementsByTagName('a')[0]
 firstAnchor.classList.add('active')
 
-const inputs = document.querySelectorAll("a");                               
-for(var i = 0; i < inputs.length; i++){                                                                  
+const inputs = navbar.querySelectorAll("a");                               
+for(var i = 0; i < inputs.length-1; i++){                                                                  
    inputs[i].addEventListener("click", styleAnchor);                           
 }
 
