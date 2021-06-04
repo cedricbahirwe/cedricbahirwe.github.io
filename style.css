@@ -1,12 +1,18 @@
+/* Motto */
+/* Don't mess up with this file 😬 */
+/* Use Semantic HTML, whenever possible,📓 */
+/* Write clean and clear code, with open (source) mind 😀 */
+/* Explore, Learn, Have fun and Inspire */
+
 :root {
     --mainfgColor: white;
+    --main-red: #a40019;
 }
 
 @font-face {
     font-family: Quicksand;
     src: url('Fonts/Quicksand-VariableFont_wght.ttf');
 }
-
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -22,13 +28,28 @@ header {
     z-index: 2;
 }
 
+hr {
+    width: 300px;
+    color: #a40019;
+}
+
 main {
     padding-top: 185px;
 }
 
-hr {
-    width: 300px;
-    color: #a40019;
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-family: Quicksand, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+a {
+    color: var(--main-red);
+    text-decoration: none;
 }
 
 .content {
@@ -45,7 +66,6 @@ header nav {
     margin: auto;
     z-index: 1000;
 }
-
 
 .author-header {
     display: flex;
@@ -93,7 +113,6 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    /* font-family: var(--font_7); */
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
@@ -103,39 +122,30 @@ li a {
     color: white !important;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    color: #000;
-}
-
-p {
-    font-family: Quicksand, sans-serif;
-    font-size: 1.5em;
-    line-height: 1.4;
-}
-
 .project-container {
-
     width: 100%;
     height: 500px;
-    background: url('Images/analog.jpeg') #333;
+    background: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
     margin: 2em 0;
 }
 
+.project-container:nth-of-type(1) {
+    background: url('Images/analog.jpeg');
+}
+
+.project-container:nth-of-type(2) {
+    background: url('projects-images/doit.jpeg') no-repeat #333;
+}
+
 .project-container:last-of-type {
-    background: url('Images/tictactoe.jpg') #333;
+    background: url('Images/tictactoe.jpg') ;
 }
 
 .project-container a {
     text-decoration: none;
-}
-
-h1 {
-    font-size: 40px;
 }
 
 .project {
@@ -152,16 +162,12 @@ h1 {
 .project .tags span {
     border: 1px solid black;
     padding: 0.5em;
-    /* background: linear-gradient(60deg, black, #af4261, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-
-    border-image-source: linear-gradient(to right, #af4261 30%, white 100%);
+    /* This might not be a good option due to browser compatibility */
+    border-image-source: linear-gradient(to right, #af4261 30%, black 100%);
     border-image-slice: 5;
 }
 
-
-/* Style the inputs */
+/* Style for main banner on home page */
 
 input {
     border-radius: 0 !important;
@@ -175,21 +181,11 @@ input {
 }
 
 .slider-show {
-    /* border-radius: 10px; */
-    /* box-shadow: 0 5px 10px #FFF ; */
-    /*box-shadow:  0 -2px 10px darkgray;*/
-    /* width: 1000px; */
     width: 100%;
     height: 600px;
     overflow: hidden;
-    transition: ease-in-out .3s;
 }
 
-/* .slider-show:hover {
-    box-shadow: 0 5px 15px #FFF;
-    width: 805px;
-    height: 505px;
-} */
 .profile {
     position: relative;
     width: 100%;
@@ -225,6 +221,7 @@ input {
     background: #fff
 }
 
+/* Used to fill the bar on hover */
 input[name="r"] {
     position: absolute;
     visibility: hidden;
@@ -246,7 +243,6 @@ input[name="r"] {
     height: 100%;
     object-fit: cover;
     background-color: #000;
-
 }
 
 .slide video {
@@ -258,6 +254,32 @@ input[name="r"] {
 video[poster] {
     width: 100%;
     height: 100%;
+}
+
+/* This works perfectly, Should only bet changed for great reasons. */
+#r1:checked ~ .s1 {
+    margin-left: 0;
+    transition: all 1s
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+    transition: all 1s
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+    transition: all 1s
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+    transition: all 1s
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+    transition: all 1s
 }
 
 #r1:checked ~ .s1 {
@@ -308,10 +330,13 @@ footer p {
 
 footer a {
     color: black;
+    /* This is used to give a linear-gradient appearance to footer link */
+    /* Note that this might not work on certain browser, need better approach. */
     background: linear-gradient(60deg, black, #af4261, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 @media (max-width: 1280px) {
     header nav, .content {
@@ -327,6 +352,7 @@ footer a {
     }
 }
 
+/* This is intended for smaller device screen but, is not working as expected */
 @media (max-width: 800px) {
     header nav, .content {
         width: 98%;
@@ -352,7 +378,7 @@ footer a {
     }
 }
 
-
+/* Used to hide views in different contexts */
 .hidden {
     display: none;
 }
