@@ -1,29 +1,13 @@
-@font-face { font-family: Quicksand; src: url('Quicksand-VariableFont_wght.ttf'); }
-
-:root {
-    --main-red: #a40019;
-}
-iframe {
-    width: 100%;
-    height: 100vh;
-    /* background: yellow; */
-    margin: auto;
-    border: none;
-}
-
 
 .author {
     height: 400px;
     width: 100%;
-    /* background-attachment: scroll; */
     background: #333 url(authbg.jpeg) no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    /* padding-bottom: 80px; */
-    /* background-color: red; */
 }
 .author img {
     width: 300px;

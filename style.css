@@ -1,10 +1,9 @@
 :root {
     --mainfgColor: white;
+    --main-red: #a40019;
 }
 
 @font-face { font-family: Quicksand; src: url('Quicksand-VariableFont_wght.ttf'); } 
-
-
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -19,9 +18,16 @@ header {
     z-index: 2;
 }
 
+
 main{
     padding-top: 185px;
 }
+
+a {
+    color: var(--main-red);
+    text-decoration: none;
+}
+
 .content {
     width: 68%;
     margin: auto;
