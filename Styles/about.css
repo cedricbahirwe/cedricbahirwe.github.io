@@ -69,7 +69,7 @@ main h3 {
      background: white;
   } 
 
-  @media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .hot-projects{
         width: 90%;
         margin: auto;
@@ -87,4 +87,4 @@ main h3 {
     .hot-projects {
         grid-template-columns: repeat(1,auto);
     }
-}
+} */
