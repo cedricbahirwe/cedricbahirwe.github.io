@@ -1,17 +1,25 @@
-
 // I'm more a JS thinker than writer 
 
+
+// An agnostic support for dark mode
+const themeCheckBox = document.getElementById('theme')
+themeCheckBox.addEventListener("click", changeTheme);
+const rootDataset = document.documentElement.dataset;
+function changeTheme(theme) {
+    const inDarkMode = (rootDataset.theme === 'dark');
+    rootDataset.theme = inDarkMode ? '' : 'dark';
+}
 
 // The goal is to get the first the clicked link in the navigation section and style it,
 // By default (Home page) we're setting and styling the first anchor tag found.
 // Need better approach.
 const navbar = document.getElementById('navbar')
-let firstAnchor = document.getElementsByTagName('a')[0]
-firstAnchor.classList.add('active')
+// let firstAnchor = document.getElementsByTagName('a')[0]
+// firstAnchor.classList.add('active')
 
 const inputs = navbar.querySelectorAll("a");                               
 for(var i = 0; i < inputs.length-1; i++){                                                                  
-   inputs[i].addEventListener("click", styleAnchor);                           
+   inputs[i].addEventListener("click", styleAnchor);
 }
 
 function styleAnchor(e) {
@@ -21,10 +29,9 @@ function styleAnchor(e) {
         })
         e.target.classList.add('active')   
     } else {
-        console.log("Don't add activty")
+        console.log("Don't add activity")
     }
 }
-
 // Should be used to check wehther user isusing a mobile device,
 // We can hide/ show different componets based on this,
 // (e.g: Hide Home Main Banner on Mobile Device)

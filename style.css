@@ -5,8 +5,17 @@
 /* Explore, Learn, Have fun and Inspire */
 
 :root {
-    --mainfgColor: white;
+    --headerBgColor: rgba(255, 255, 255, 0.99);
+    --mainBgColor: white;
     --main-red: #a40019;
+    --mainFgColor: black;
+}
+
+[data-theme="dark"] {
+    --headerBgColor: #403c3c;
+    --mainBgColor: #2d2d2d;
+    --mainFgColor: white;
+
 }
 
 @font-face {
@@ -16,13 +25,17 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background: var(--mainBgColor);
+    color: var(--mainFgColor);
+    transition: background 1s;
 
 }
 
 header {
     position: fixed;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.99);
+    background-color: var(--headerBgColor);
+    transition: background 1s;
     width: 100%;
     padding: 1.5em 0 2.2em;
     z-index: 2;
@@ -311,7 +324,7 @@ video[poster] {
 /* Footer Styling */
 footer {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -332,7 +345,7 @@ footer a {
     color: black;
     /* This is used to give a linear-gradient appearance to footer link */
     /* Note that this might not work on certain browser, need better approach. */
-    background: linear-gradient(60deg, black, #af4261, red);
+    background: linear-gradient(60deg, var(--mainFgColor), #af4261, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -382,3 +395,68 @@ footer a {
 .hidden {
     display: none;
 }
+
+/* Slider customization */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--main-red);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
