@@ -2,7 +2,7 @@
 
 
 -  🏭 I'm a `Swift` Developer, Front-End Enthusiast (`React`)
-- 📱 I build apps for iOS and watchOS plateforms⌚️
+- 📱 I build apps for iOS and watchOS platforms⌚️
 - 🔭 I’m currently working on a lot of projects, things and ideas, from Mobile, Web apps to Desktop.
 - 🌱 I’m currently learning React, Core Data and watchOS
 - 👯 I’m looking to collaborate on iOS and React Projects/Ideas
@@ -18,13 +18,13 @@
 
 - Work on Better Standard Design ( Responsiveness, Colors, ...)
 - Build project with Open Source Design thinking (Provide a ready to go website which allows more customizations if needed).
-- Work on SEO ( Search Engine Optimazation ) and Semantic.
+- Work on SEO ( Search Engine Optimization ) and Semantic.
 
 ## 🔐 Future Features:
 
-- Build a stable version of the webiste with a modern technology/framework (thinking of `React` for front-end)
-- Implement interactive Basic Bot chating
-- Implement Localization and Translation. (Thinking of `Machine translation` or `Human Translation`
+- Build a stable version of the website with a modern technology/framework (thinking of `React` for front-end)
+- Implement interactive Basic Bot chatting
+- Implement Localization and Translation. (Thinking of `Machine translation` or `Human Translation`)
 
 
 ## Contribute
