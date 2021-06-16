@@ -12,8 +12,8 @@
 }
 
 [data-theme="dark"] {
-    --headerBgColor: #403c3c;
-    --mainBgColor: #2d2d2d;
+    --headerBgColor: #2d2d2d;
+    --mainBgColor: #222222;
     --mainFgColor: white;
 
 }
