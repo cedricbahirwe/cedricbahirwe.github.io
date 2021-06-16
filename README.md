@@ -20,6 +20,9 @@
 - Build project with Open Source Design thinking (Provide a ready to go website which allows more customizations if needed).
 - Work on SEO ( Search Engine Optimization ) and Semantic.
 
+## Known Issues 🧑🏽‍🔧
+- Light/Dark Mode Switch state management 
+- Mobile Responsiveness
 ## 🔐 Future Features:
 
 - Build a stable version of the website with a modern technology/framework (thinking of `React` for front-end)
