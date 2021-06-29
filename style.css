@@ -5,18 +5,18 @@
 /* Explore, Learn, Have fun and Inspire */
 
 :root {
-    --headerBgColor: rgba(255, 255, 255, 0.99);
-    --mainBgColor: white;
+    --headerBgColor: rgba(0, 0, 0, 0.95);
+    --mainBgColor: black;
     --main-red: #a40019;
-    --mainFgColor: black;
+    --mainFgColor: white;
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
     --headerBgColor: #2d2d2d;
     --mainBgColor: #222222;
     --mainFgColor: white;
 
-}
+} */
 
 @font-face {
     font-family: Quicksand;
@@ -34,12 +34,15 @@ body {
 header {
     position: fixed;
     top: 0;
-    background-color: var(--headerBgColor);
+    background-color: rgba(17, 17, 17, 0.98);
     transition: background 1s;
     width: 100%;
     padding: 1.5em 0 2.2em;
     z-index: 2;
+    -webkit-box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 75%);
+    box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 75%);
 }
+
 
 hr {
     width: 300px;
@@ -56,7 +59,7 @@ h1 {
 
 p {
     font-family: Quicksand, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.4;
 }
 
@@ -80,6 +83,11 @@ header nav {
     z-index: 1000;
 }
 
+.highlight {
+    color: var(--main-red) !important;
+    font-weight: bold;
+}
+
 .author-header {
     display: flex;
     align-items: center;
@@ -95,7 +103,6 @@ header nav {
     display: flex;
     flex-direction: column;
     padding-right: 5px;
-    text-align: right;
 }
 
 .author-title a {
@@ -122,7 +129,7 @@ li {
 
 li a {
     display: block;
-    color: gray;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -131,194 +138,51 @@ li a {
 }
 
 .active {
-    background-color: #000;
-    color: white !important;
+    background-color: white;
+    color: black !important;
+    border-radius: 5px;
 }
 
+.projects h1 {
+    text-align: center;
+    font-weight: 900;
+}
 .project-container {
     width: 100%;
-    height: 500px;
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 2em 0;
 }
-
-.project-container:nth-of-type(1) {
-    background: url('images/analog.jpeg');
-}
-
-.project-container:nth-of-type(2) {
-    background: url('projects-images/doit.jpeg') no-repeat #333;
-}
-
-.project-container:last-of-type {
-    background: url('images/tictactoe.jpg') ;
-}
-
-.project-container a {
-    text-decoration: none;
+.project-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0px #ccc;
 }
 
 .project {
     width: 90%;
     margin: auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.project-container h1, .tags {
     text-align: center;
-    color: white;
 }
 
 .project .tags {
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .project .tags span {
     border: 1px solid black;
     padding: 0.5em;
     /* This might not be a good option due to browser compatibility */
-    border-image-source: linear-gradient(to right, #af4261 30%, black 100%);
+    border-image-source: linear-gradient(to right, #af4261 30%, white 100%);
     border-image-slice: 5;
+    margin: 0 5px;
 }
 
-/* Style for main banner on home page */
-
-input {
-    border-radius: 0 !important;
-    border: none !important;
-    box-shadow: none;
-    width: 80%;
-    height: 20px;
-    margin-left: 40px;
-    margin-bottom: 15px;
-    padding: 8px;
-}
-
-.slider-show {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-}
-
-.profile {
-    position: relative;
-    width: 100%;
-    height: 500px;
-}
-
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #000;
-}
-
-.navigate {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.bar {
-    width: 50px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.bar:hover {
-    background: #fff
-}
-
-/* Used to fill the bar on hover */
-input[name="r"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-.slides {
-    width: 500%;
-    height: 100%;
-    display: flex;
-}
-
-.slide {
-    width: 20%;
-    transition: 0.6s;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: #000;
-}
-
-.slide video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-video[poster] {
-    width: 100%;
-    height: 100%;
-}
-
-/* This works perfectly, Should only bet changed for great reasons. */
-#r1:checked ~ .s1 {
-    margin-left: 0;
-    transition: all 1s
-}
-
-#r2:checked ~ .s1 {
-    margin-left: -20%;
-    transition: all 1s
-}
-
-#r3:checked ~ .s1 {
-    margin-left: -40%;
-    transition: all 1s
-}
-
-#r4:checked ~ .s1 {
-    margin-left: -60%;
-    transition: all 1s
-}
-
-#r5:checked ~ .s1 {
-    margin-left: -80%;
-    transition: all 1s
-}
-
-#r1:checked ~ .s1 {
-    margin-left: 0;
-    transition: all 1s
-}
-
-#r2:checked ~ .s1 {
-    margin-left: -20%;
-    transition: all 1s
-}
-
-#r3:checked ~ .s1 {
-    margin-left: -40%;
-    transition: all 1s
-}
-
-#r4:checked ~ .s1 {
-    margin-left: -60%;
-    transition: all 1s
-}
-
-#r5:checked ~ .s1 {
-    margin-left: -80%;
-    transition: all 1s
-}
 
 
 /* Footer Styling */
