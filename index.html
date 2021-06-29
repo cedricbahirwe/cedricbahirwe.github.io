@@ -18,6 +18,13 @@
 
     <header>
         <nav id="navbar">
+            <div class="author-header">
+                <div class="author-title">
+                    <a>Cédric Bahirwe</a>
+                    <span>Software Engineer/iOS Developer</span>
+                </div>
+                <!-- <img src="images/author.png" style="width: 60px; height: 60px" alt="Github"> -->
+            </div>
             <ul>
                 <li><a href="index.html" class="active">Portfolio</a></li>
                 <li><a href="https://twitter.com/cedricbahirwe" target="_blank"> News</a></li>
@@ -25,69 +32,28 @@
                 <li><a href="htmls/about.html">About</a></li>
             </ul>
 
-            <div class="author-header">
-                <div class="author-title">
-                    <a>Cédric Bahirwe</a>
-                    <span>Software Engineer/iOS Developer</span>
-                </div>
-                <img src="images/author.png" style="width: 60px; height: 60px" alt="Github">
-            </div>
         </nav>
     </header>
 
-
     <main>
 
-        <div class="profile">
-            <div class="slider-show middle">
-                <div class="slides">
-                    <label for="r1"></label><input type="radio" name="r" id="r1" checked>
-                    <label for="r2"></label><input type="radio" name="r" id="r2">
-                    <label for="r3"></label><input type="radio" name="r" id="r3">
-                    <label for="r4"></label><input type="radio" name="r" id="r4">
-                    <label for="r5"></label><input type="radio" name="r" id="r5">
-
-                    <div class="slide">
-                        <img src="images/analog.jpeg" alt="">
-                    </div>
-                    <div class="slide s1">
-                        <img src="/projects-images/restaurant-preview.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/analog.jpeg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/restaurant.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <video src="https://www.youtube.com/watch?v=l5jUaLBXEg8"  controls autoplay muted></video>
-                    </div>
-                </div>
-
-
-                <div class="navigate">
-                    <label for="r1" class="bar"></label>
-                    <label for="r2" class="bar"></label>
-                    <label for="r3" class="bar"></label>
-                    <label for="r4" class="bar"></label>
-                    <label for="r5" class="bar"></label>
-                </div>
-            </div>
-        </div>
-
-
         <div class="content">
-
-
             <div class="projects">
+                <h1>My Projects</h1>
                 <!-- AppLock -->
                 <div class="project-container">
-                    <a href="https://github.com/cedricbahirwe/AppLock" target="_blank">
+                    <a href="https://github.com/cedricbahirwe/AppLock" target="_blank"></a>
                         <div class="project">
+                            <img src="images/analog.jpeg" alt="AppLock Package" draggable="false">
                             <h1> AppLock </h1>
                             <p>
-                                AppLock is a simple SwiftUI framework that makes it easy to create a PinCode user interface. It provides a struct,
+                                AppLock is a simple SwiftUI framework that makes it easy to create a <span class="highlight">PinCode</span> user interface.
+                                It provides a struct,
                                 "AppLockView", that can be shown inside a view or a sheet for better user experience.
+                            </p>
+                            <p>
+                                Natively, Apple only provides <b>Touch ID </b>and <b>Face ID</b> as authentication mechanisms and only brings <b>Passcode</b> 
+                                when authentication with those ones have failed; The goal here was to provide a fully fledged Component that can be customized and reuse with ease.
                             </p>
                             <div class="tags">
                                 <span>SwiftUI</span>
@@ -95,12 +61,12 @@
                                 <span>Authentication</span>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <!-- DOIT -->
                 <div class="project-container">
-                    <a href="https://github.com/cedricbahirwe/DOIT" target="_blank">
+                    <a href="https://github.com/cedricbahirwe/DOIT" target="_blank"></a>
                         <div class="project">
+                            <img src="projects-images/doit.jpeg" alt="Do It App" draggable="false">
                             <h1> DOIT </h1>
                             <p>
                                 A TO-DO app with ability to Create, Update, Read, Delete tasks and save tasks on local storage.
@@ -112,11 +78,11 @@
                                 <span>CoreData</span>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <div class="project-container">
-                    <a href="https://github.com/cedricbahirwe/TicTacToe" target="_blank">
+                    <a href="https://github.com/cedricbahirwe/TicTacToe" target="_blank"></a>
                         <div class="project">
+                            <img src="images/tictactoe.jpg" alt="TicTacToe Game" draggable="false">
                             <h1> TicTacToe </h1>
                             <p>
                                 A simple game using a matrix agnostic approach
@@ -126,7 +92,6 @@
                                 <span>Agnostic Matrix Approach</span>
                             </div>
                         </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -144,10 +109,10 @@
         </p>
         <p>Cédric Bhirwe &copy 2021. All rights reserved.</p>
             <!-- Rounded switch -->
-        <label class="switch">
+        <!-- <label class="switch">
           <input type="checkbox" id="theme">
           <span class="slider round"></span>
-        </label>
+        </label> -->
     </footer>
     <script src="jscript/main.js"></script>
 </body>
