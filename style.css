@@ -28,7 +28,6 @@ body {
     background: var(--mainBgColor);
     color: var(--mainFgColor);
     transition: background 1s;
-
 }
 
 header {
@@ -50,7 +49,7 @@ hr {
 }
 
 main {
-    padding-top: 185px;
+    padding-top: 130px;   /* padding-top: 185px;   */
 }
 
 h1 {
@@ -66,6 +65,12 @@ p {
 a {
     color: var(--main-red);
     text-decoration: none;
+}
+
+.active {
+    background-color: white;
+    color: black !important;
+    border-radius: 5px;
 }
 
 .content {
@@ -137,20 +142,14 @@ li a {
     text-transform: uppercase;
 }
 
-.active {
-    background-color: white;
-    color: black !important;
-    border-radius: 5px;
-}
-
 .projects h1 {
     text-align: center;
     font-weight: 900;
 }
-.project-container {
+/* .project-container {
     width: 100%;
     margin: 2em 0;
-}
+} */
 .project-container img {
     width: 100%;
     height: 500px;
@@ -182,8 +181,6 @@ li a {
     border-image-slice: 5;
     margin: 0 5px;
 }
-
-
 
 /* Footer Styling */
 footer {
