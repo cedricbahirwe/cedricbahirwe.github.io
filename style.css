@@ -156,6 +156,7 @@ li a {
     object-fit: cover;
     background: #333;
     border-radius: 10px;
+    /* object-fit: con; */
     box-shadow: 0.5px 0.5px 0.5px 0px #ccc;
 }
 
