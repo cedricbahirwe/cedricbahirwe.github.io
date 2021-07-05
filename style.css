@@ -36,7 +36,7 @@ header {
     background-color: rgba(17, 17, 17, 0.85);
     transition: background 1s;
     width: 100%;
-    padding: 1.5em;
+    padding: 1.5em 0 2.2em;
     z-index: 2;
     -webkit-box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 75%);
     box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 75%);
@@ -78,16 +78,36 @@ header nav {
 }
 
 
+
 .active {
     background-color: white;
     color: black !important;
     border-radius: 5px;
 }
 
+.intro {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.intro p {
+    color: #e6e4e1;
+    opacity: 0.85;
+    line-height: 180%;
+}
+.intro img {
+    /* width: 300px;
+    height: 300px; */
+    margin-right: 2em;
+}
+
 .content {
     width: 68%;
     margin: auto;
-    padding-top: 80px;
 }
 
 
@@ -167,6 +187,7 @@ li a {
     box-sizing: border-box;
     /* color: rgba(255, 255, 255, 0.8); */
     color: #e6e4e1;
+    opacity: 0.9;
 }
 
 .project-container h1, .tags {
@@ -219,25 +240,30 @@ footer a {
 
 /* Media queries */
 @media (max-width: 1280px) {
-    header nav, .content {
+    header nav, .content, .intro {
         width: 85%;
-        transition: ease-in-out .3s;
+        transition: ease-in-out .25s;
+    }
+    .intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
     }
 }
 
 @media (max-width: 1080px) {
-    header nav, .content {
+    header nav, .content , .intro{
         width: 98%;
-        transition: ease-in-out .3s;
+        transition: ease-in-out .25s;
     }
 }
 
 /* This is intended for smaller device screen but, is not working as expected */
 @media (max-width: 800px) {
-    header nav, .content {
+    header nav, .content, .intro {
         width: 98%;
         flex-direction: column-reverse;
-        transition: ease-in-out .3s;
+        transition: ease-in-out .25s;
     }
 
     .author-title {
