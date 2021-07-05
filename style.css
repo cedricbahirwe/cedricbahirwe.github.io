@@ -36,12 +36,11 @@ header {
     background-color: rgba(17, 17, 17, 0.98);
     transition: background 1s;
     width: 100%;
-    padding: 1.5em 0 2.2em;
+    padding: 1.5em;
     z-index: 2;
     -webkit-box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 75%);
     box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 75%);
 }
-
 
 hr {
     width: 300px;
@@ -49,7 +48,7 @@ hr {
 }
 
 main {
-    padding-top: 130px;   /* padding-top: 185px;   */
+    padding-top: 130px;
 }
 
 h1 {
@@ -67,6 +66,16 @@ a {
     text-decoration: none;
 }
 
+header nav {
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    z-index: 1000;
+}
+
+
 .active {
     background-color: white;
     color: black !important;
@@ -79,14 +88,6 @@ a {
     padding-top: 80px;
 }
 
-header nav {
-    width: 68%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    z-index: 1000;
-}
 
 .highlight {
     color: var(--main-red) !important;
@@ -113,7 +114,7 @@ header nav {
 .author-title a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .author-title span {
@@ -136,10 +137,9 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-family: Quicksand, sans-serif;
 }
 
 .projects h1 {
