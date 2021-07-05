@@ -104,10 +104,10 @@ header nav {
     margin-right: 2em;
 }
 
-#presentation button {
+ button {
     border: none;
     outline: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 10px 20px;
     background-color: whitesmoke;
 }
