@@ -59,8 +59,8 @@ h1 {
 
 p {
     font-family: Quicksand, sans-serif;
-    font-size: 1.3em;
-    line-height: 1.4;
+    font-size: 18pt;
+    line-height: 120%;
 }
 
 a {
@@ -96,7 +96,7 @@ header nav {
 #intro p {
     color: #e6e4e1;
     opacity: 0.85;
-    line-height: 180%;
+    line-height: 150%;
 }
 #intro img {
     width: 300px;
@@ -117,23 +117,10 @@ header nav {
     margin: auto;
 }
 
-
 .highlight {
     color: var(--main-red) !important;
     font-weight: bold;
 }
-
-.author-header {
-    display: flex;
-    align-items: center;
-}
-
-.author-header img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
 .author-title {
     display: flex;
     flex-direction: column;
@@ -207,11 +194,8 @@ li a {
 
 .project .tags span {
     
-    border: 1px solid black;
+    border: 1px solid var(--main-red);
     padding: 0.5em;
-    /* This might not be a good option due to browser compatibility */
-    border-image-source: linear-gradient(to right, #af4261 30%, white 100%);
-    border-image-slice: 5;
     margin: 0 5px;
 }
 
@@ -220,7 +204,7 @@ footer {
     width: 100%;
     margin: 0 auto 10px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 20pt;
 }
 
 footer img {
@@ -232,16 +216,11 @@ footer img {
 }
 
 footer p {
-    font-size: 1.3rem;
+    font-size: 18pt;
 }
 
 footer a {
-    color: black;
-    /* This is used to give a linear-gradient appearance to footer link */
-    /* Note that this might not work on certain browser, need better approach. */
-    background: linear-gradient(60deg, var(--mainFgColor), #af4261, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--main-red);
 }
 
 
@@ -251,45 +230,33 @@ footer a {
         width: 85%;
         transition: ease-in-out .25s;
     }
+
+}
+
+@media (max-width: 1080px) {
+    header nav, .content , #intro{
+        width: 90%;
+        transition: ease-in-out .25s;
+    }
+}
+@media (min-width:320px)  { 
+    #intro {
+    }
+ }
+
+@media only screen and (max-width: 768px) {
     #intro {
         flex-direction: column;
         text-align: center;
         padding: 30px;
     }
-}
 
-@media (max-width: 1080px) {
-    header nav, .content , #intro{
-        width: 98%;
-        transition: ease-in-out .25s;
+    p {
+        font-size: 20pt;
     }
 }
 
-/* This is intended for smaller device screen but, is not working as expected */
-@media (max-width: 800px) {
-    header nav, .content, #intro {
-        width: 98%;
-        flex-direction: column-reverse;
-        transition: ease-in-out .25s;
-    }
 
-    .author-title {
-        text-align: left;
-    }
-
-    header ul {
-        width: inherit;
-    }
-
-    header ul li {
-        width: 24%;
-    }
-
-    .author-header {
-        width: inherit;
-        justify-content: space-between;
-    }
-}
 
 /* Used to hide views in different contexts */
 .hidden {
