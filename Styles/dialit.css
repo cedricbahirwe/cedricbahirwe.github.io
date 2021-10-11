@@ -1,16 +1,9 @@
-/* main {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    color: black;
-    background-color: white;
-} */
 
 :root {
     --headerBgColor: rgba(255, 255, 255, 0.95);
     --mainBgColor: 245, 245, 247;
     --main-red: rgb(164, 0, 25);
-    --mainFgColor: black;
+    --mainFgColor: rgba(0,0,0,0.9);
 }
 
 body {
@@ -36,14 +29,50 @@ a:hover {
     padding: 20px 10%;
     align-items: center;
     justify-content: space-around;
-
     height: 90vh;
     background-color:rgba(0, 0, 0, 0.1);
-
     text-align: center
     
 }
 
 #preview-description {
+    text-align: center;
+}
+
+.fas {
+    color: var(--main-red);
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+#features h2 {
+    margin: 12px;
+}
+#features p  {
+    margin: 0;
+}
+
+#features > div {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 5px;  /* and that, will result in a 10px gap */
+}
+
+#features p {
+    font-size: 17pt;
+    line-height: 100%;
+}
+
+hr {
+    /* height: 10px; */
+    background-color: rgba(--mainFgColor, 0.8);
+}
+
+.d-title {
     text-align: center;
 }
