@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sanas-serif;
     background: var(--mainBgColor);
     color: var(--mainFgColor);
     transition: background 1s;
