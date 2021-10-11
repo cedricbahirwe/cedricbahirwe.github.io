@@ -43,11 +43,15 @@ a:hover {
     color: var(--main-red);
 }
 
+/*  Features section */
+.feats-container {
+    margin: 80px 0;
+}
 #features {
     display: flex;
     align-items: center;
     max-width: 80%;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 #features h2 {
@@ -69,8 +73,10 @@ a:hover {
 }
 
 hr {
-    /* height: 10px; */
-    background-color: rgba(--mainFgColor, 0.8);
+    height: 3px;
+    width: 100px;
+    background-color: var(--main-red);
+    border: none;
 }
 
 .d-title {
