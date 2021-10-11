@@ -1,7 +1,49 @@
-body {
+/* main {
     text-align: center;
     width: 80%;
     margin: auto;
     color: black;
     background-color: white;
+} */
+
+:root {
+    --headerBgColor: rgba(255, 255, 255, 0.95);
+    --mainBgColor: 245, 245, 247;
+    --main-red: rgb(164, 0, 25);
+    --mainFgColor: black;
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+header {
+    background-color: white; 
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+header li a {
+    color: var(--mainFgColor);
+}
+
+a:hover {
+ color: var(--main-red);
+}
+
+#preview {
+    display: flex;
+    margin: auto;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 90vh;
+    background-color:rgba(0, 0, 0, 0.1);
+
+    text-align: center
+    
+}
+
+#preview-description {
+    text-align: center;
 }
