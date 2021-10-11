@@ -39,7 +39,7 @@ a:hover {
     text-align: center;
 }
 
-.fas {
+.fas, .fab {
     color: var(--main-red);
 }
 
@@ -81,4 +81,44 @@ hr {
 
 .d-title {
     text-align: center;
+}
+
+/* Support section */
+#support {
+
+    text-align: center;
+}
+
+#contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#contact-us .contact {
+    margin: 40px;
+}
+
+/* Privacy Policy */
+
+#privacy {
+    text-align: center;
+}
+
+#privacy a {
+    display: inline-block;
+    color: white;
+    align-content: center;
+    padding: 20px 50px;
+    background-color: black;
+    /* background-color: black; */
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+#privacy a:hover {
+    background-color: var(--main-red);
 }
