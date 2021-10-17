@@ -4,6 +4,8 @@
 /* Write clean and clear code, with open (source) mind 😀 */
 /* Explore, Learn, Have fun and Inspire */
 
+@import url("fonts/stylesheet.css");
+
 :root {
     --headerBgColor: rgba(0, 0, 0, 0.95);
     --mainBgColor: black;
@@ -18,13 +20,24 @@
 
 } */
 
-/* @font-face {
-    font-family: Quicksand;
-    src: url('fonts/Quicksand-VariableFont_wght.ttf');
-} */
+h1 {
+    font-family: 'montserratblack', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+h2 {
+    font-family: 'montserratbold', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
 
 body {
-    font-family: 'Quicksand', sanas-serif;
+    /* font-family: 'montserratregular', sans-serif; */
     background: var(--mainBgColor);
     color: var(--mainFgColor);
     transition: background 1s;
@@ -58,7 +71,7 @@ h1 {
 }
 
 p {
-    font-family: Quicksand, sans-serif;
+    font-family: 'montserratregular', sans-serif;
     font-size: 18pt;
     line-height: 120%;
 }
@@ -128,13 +141,13 @@ header nav {
 }
 
 .author-title a {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'montserratregular', sans-serif;
     font-weight: 700;
     font-size: 1.8em;
 }
 
 .author-title span {
-    font-family: Quicksand, sans-serif;
+    font-family: 'montserratregular', sans-serif;
     font-weight: 200;
     font-size: 1.3em;
 }
@@ -155,7 +168,7 @@ li a {
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-family: Quicksand, sans-serif;
+    font-family: 'montserratregular', sans-serif;
 }
 
 .projects h1 {
