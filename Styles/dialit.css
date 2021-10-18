@@ -91,23 +91,6 @@ a:hover {
     text-align: center;
 }
 
-#privacy a {
-    display: inline-block;
-    color: white;
-    align-content: center;
-    padding: 20px 50px;
-    background-color: black;
-    /* background-color: black; */
-    border-radius: 15px;
-    transition: 0.3s;
-
-}
-
-#privacy a:hover {
-    background-color: var(--main-red);
-}
-
-
 
 /* Others */
 
