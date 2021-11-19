@@ -40,6 +40,17 @@ a:hover {
 }
 
 
+
+.comingsoon {
+    display: inline-block;
+    background-color: #636b6f;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+
+
 /*  Features section */
 
 #features {
