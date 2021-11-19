@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <link href="../style.css" rel="stylesheet">
+    <link href="../Styles/blog.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/author-shortcut.png" />
+    <title>Sample Blog</title>
+    <!-- // pojoaque , github-dark -->
+
+    <link rel="stylesheet" href="../Styles/github-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    
+    <script>hljs.highlightAll();</script>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="author-title">
+                <a>Cédric Bahirwe</a>
+                <span>Software Engineer/iOS Developer</span>
+            </div>
+            <ul>
+                <li><a href="../index.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active"  target="_blank">Blog</a></li>
+                <li><a href="https://www.linkedin.com/in/cedricbahirwe" target="_blank">Github</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="code">
+            <pre>
+<code class="language-swift">
+struct EventsFilterView_Previews: PreviewProvider {
+    static var previews: some View {
+        EventsFilterView(showMenu: .constant(false)) {
+            VStack(alignment: .leading) {
+                Text("Testing Title").font(.largeTitle)
+                List(0 ..< 10) { item in
+                    Text("Testing line number \(item)")
+                }
+            }
+        }
+        .environmentObject(EventsViewModel())
+    }
+}
+</code>
+            </pre>
+        </div>
+                    
+        </div>
+    </main>
+
+
+</body>
+
+</html>
