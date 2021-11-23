@@ -10,7 +10,9 @@
   --headerBgColor: rgba(0, 0, 0, 0.95);
   --mainBgColor: #121212;
   --main-red: #a40019;
-  --mainFgColor: white;
+  /* --mainFgColor: white; */
+  --mainFgColor: #EFEFEF;
+  
 }
 
 /* [data-theme="dark"] {
