@@ -5,16 +5,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/normalize.css">
+    
+    <link rel="shortcut icon" href="../images/author-shortcut.png" />
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Sample Blog</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="../notfound/style.css" />
+
     <link href="../style.css" rel="stylesheet">
     <link href="../Styles/blog.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../images/author-shortcut.png" />
-    <title>Sample Blog</title>
-    <!-- // pojoaque , github-dark -->
-
-    <link rel="stylesheet" href="../Styles/github-dark.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    
-    <script>hljs.highlightAll();</script>
 
 </head>
 
@@ -36,28 +43,17 @@
     </header>
 
     <main>
-
-        <div class="code">
-            <pre>
-<code class="language-swift">
-struct EventsFilterView_Previews: PreviewProvider {
-    static var previews: some View {
-        EventsFilterView(showMenu: .constant(false)) {
-            VStack(alignment: .leading) {
-                Text("Testing Title").font(.largeTitle)
-                List(0 ..< 10) { item in
-                    Text("Testing line number \(item)")
-                }
-            }
-        }
-        .environmentObject(EventsViewModel())
-    }
-}
-</code>
-            </pre>
-        </div>
-                    
-        </div>
+        
+	<div id="notfound">
+		<div class="notfound">
+			<div class="notfound-404">
+				<h1>404</h1>
+				<h2>Page not found</h2>
+			</div>
+			<a href="../index.html">Homepage</a>
+		</div>
+	</div>
+        
     </main>
 
 
