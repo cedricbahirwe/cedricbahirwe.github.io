@@ -41,9 +41,9 @@ a:hover {
 
 
 
-.comingsoon {
+#appstore-link {
     display: inline-block;
-    background-color: #636b6f;
+    background-color: #000;
     color: white;
     padding: 20px 20px;
     border-radius: 10px;
