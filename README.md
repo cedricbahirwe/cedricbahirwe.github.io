@@ -18,7 +18,7 @@
 
 ## Contribute
 
-I would love you for the contribution to this project, check the ``LICENSE`` file for more info.
+I would love you for the contribution to this project.
 
 ## Meta
 
