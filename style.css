@@ -9,10 +9,9 @@
 :root {
   --headerBgColor: rgba(0, 0, 0, 0.95);
   --mainBgColor: #121212;
-  --main-red: #a40019;
-  /* --mainFgColor: white; */
-  --mainFgColor: #EFEFEF;
-  
+  --main-red: rgba(164, 0, 25);
+  --mainFgColor: rgba(239, 239, 239);
+  --secondary-fg: rgba(239, 239, 239, 0.8);
 }
 
 /* [data-theme="dark"] {
@@ -57,14 +56,9 @@ body {
     border-radius: 15px;
     transition: 0.3s;
 }
-#
 
-.b-btn:hover {
-    background-color: var(--main-red);
-}
- .w-btn {
-    font-family: "montserratregular", sans-serif;
- }
+
+
 header {
   position: fixed;
   top: 0;
@@ -81,7 +75,7 @@ header {
 
 hr {
   width: 300px;
-  color: #a40019;
+  /* color: #a40019; */
 }
 
 main {
@@ -128,8 +122,8 @@ header nav {
 }
 
 #intro p {
-  color: #e6e4e1;
-  opacity: 0.85;
+  color: var(--secondary-fg) ;
+  /* opacity: 0.85; */
   line-height: 150%;
 }
 
@@ -217,9 +211,22 @@ li a {
   width: 90%;
   margin: auto;
   box-sizing: border-box;
-  /* color: rgba(255, 255, 255, 0.8); */
-  color: #e6e4e1;
   opacity: 0.9;
+}
+
+.project p {
+  color: var(--secondary-fg);
+}
+
+.project img {
+  transition: all .2s ease-in-out;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+}
+.project h1:hover {
+  color: var(--main-red);
 }
 
 .project-container h1,
@@ -235,6 +242,7 @@ li a {
   border: 1px solid var(--main-red);
   padding: 0.5em;
   margin: 0 5px;
+  color: var(--mainFgColor);
 }
 
 /* Footer Styling */
@@ -299,4 +307,12 @@ footer a {
 /* Used to hide views in different contexts */
 .hidden {
   display: none;
+}
+
+/* Gloabl Project Selector */
+.b-btn:hover {
+  background-color: var(--main-red);
+}
+.w-btn {
+  font-family: "montserratregular", sans-serif;
 }
