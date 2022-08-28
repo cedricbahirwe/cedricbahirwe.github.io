@@ -214,6 +214,10 @@ li a {
   opacity: 0.9;
 }
 
+.project h1 {
+  color: var(--mainFgColor);
+}
+
 .project p {
   color: var(--secondary-fg);
 }
