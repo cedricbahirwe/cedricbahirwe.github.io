@@ -148,7 +148,7 @@ button {
   background-color: var(--main-red);
   border-radius: 15px;
   color: var(--foreground-white);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.35s ease-in-out;
 }
 
 button:hover {
