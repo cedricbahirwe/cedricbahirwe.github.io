@@ -202,68 +202,8 @@ li a {
   font-family: "montserratregular", sans-serif;
 }
 
-.projects h1 {
-  text-align: center;
-  font-weight: 900;
-}
-
-.project-container {
-  width: 100%;
-  margin: 60px 0;
-}
-
-.project-container img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  background: #333;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px 0 #ccc;
-}
-
-.project {
-  width: 90%;
-  margin: auto;
-  box-sizing: border-box;
-  opacity: 0.9;
-}
-
-.project h1 {
-  color: var(--mainFgColor);
-}
-
-.project p {
-  color: var(--secondary-fg);
-}
-
-.project img {
-  transition: all 0.2s ease-in-out;
-}
-
-.project img:hover {
-  transform: scale(1.05);
-}
-.project h1:hover {
-  color: var(--main-red);
-}
-
-.project-container h1,
-.tags {
-  text-align: center;
-}
-
-.project .tags {
-  height: 50px;
-}
-
-.project .tags span {
-  border: 1px solid var(--main-red);
-  padding: 0.5em;
-  margin: 0 5px;
-  color: var(--mainFgColor);
-}
-
-:root, body {
+:root,
+body {
   margin: 0px;
   padding: 0px;
 }
@@ -279,11 +219,6 @@ li a {
 }
 .cta-btn-1 {
   font-family: "montserratregular", sans-serif;
-}
-
-.content {
-  display: none;
-  visibility: hidden;
 }
 
 .my-apps {
@@ -310,9 +245,14 @@ li a {
   border-radius: 20px;
 }
 
+#apps-3 .card-view:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
 .card-view .view-on-github {
   color: var(--mainBgColor);
-  
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -323,7 +263,6 @@ li a {
   border-radius: 10px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease-in-out, scale 0.3s ease-in-out;
-
 }
 
 .card-view .view-on-github:hover {
