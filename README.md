@@ -11,10 +11,8 @@
 
 ## 🔐 Future Features:
 
-- Build a stable version of the website with a modern technology/framework (thinking of `React` for front-end)
 - Light/Dark Mode Implementation
-- Mobile Responsiveness
-
+- Build a stable version of the website with a modern technology/framework (thinking of `React` for front-end)
 
 ## Contribute
 
