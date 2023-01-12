@@ -303,12 +303,39 @@ li a {
 
 .card-view {
   display: grid;
-  /* min-width: 400px; */
   grid-template-columns: auto auto;
   gap: 20px;
   padding: 10px 20px;
   background-color: #fafafa;
   border-radius: 20px;
+}
+
+.card-view .view-on-github {
+  color: var(--mainBgColor);
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 180px;
+  background-color: var(--mainFgColor);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out, scale 0.3s ease-in-out;
+
+}
+
+.card-view .view-on-github:hover {
+  scale: 0.98;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-view .view-on-github img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  filter: invert();
 }
 
 .card-view-img {
