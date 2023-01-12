@@ -22,8 +22,10 @@ window.onload = function () {
 
         if (rootDataset.theme === lightMode) {
             darkModeSwitch.style.justifyContent = 'flex-start';
+            darkModeSwitch.classList.remove('is-dark-mode')
         } else {
             darkModeSwitch.style.justifyContent = 'flex-end';
+            darkModeSwitch.classList.add('is-dark-mode')
         }
         localStorage.setItem(cedricSiteThemeId, rootDataset.theme);
     } else {
@@ -39,7 +41,9 @@ function isCurrentThemeLight() {
 }
 
 const darkModeSwitch = document.getElementById('darkmode-toggle');
-darkModeSwitch.addEventListener("click", toggleTheme);
+if (darkModeSwitch != null) {
+    darkModeSwitch.addEventListener("click", toggleTheme);
+}
 
 // Toggle between light and dark mode
 function toggleTheme(e) {
@@ -56,8 +60,7 @@ function toggleTheme(e) {
     }
     rootDataset.theme = nextTheme;
     localStorage.setItem(cedricSiteThemeId, rootDataset.theme);
-    
-    console.log("sss", rootDataset.theme );
+
     if (rootDataset.theme === darkMode) {
         darkModeSwitch.style.justifyContent = 'flex-end';
     } else {
