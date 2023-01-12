@@ -6,21 +6,26 @@
 
 @import url("fonts/stylesheet.css");
 
-:root {
-  --headerBgColor: rgba(164, 0, 25);
-  --mainBgColor: #e2f0ff;
+html {
   --main-red: rgba(164, 0, 25);
+  --mainBgColor: #e2f0ff;
   --mainFgColor: #171e2b;
+  --main-black: #171e2b;
   --foreground-white: #e2f0ff;
-  --secondary-fg: #171e2b;
 }
 
-/* [data-theme="dark"] {
-    --headerBgColor: #2d2d2d;
-    --mainBgColor: #222222;
-    --mainFgColor: white;
+html[data-theme="dark"] {
+  --main-red: rgba(164, 0, 25);
+  --mainBgColor: #171e2b;
 
-} */
+  --mainFgColor: #e2f0ff;
+  --foreground-white: #e2f0ff;
+}
+
+body {
+  background-color: var(--mainBgColor);
+  color: var(--mainFgColor);
+}
 
 h1 {
   font-family: "montserratbold", Arial, sans-serif;
@@ -42,11 +47,6 @@ h4 {
 
 a {
   text-decoration: none;
-}
-
-body {
-  background: var(--mainBgColor) !important;
-  color: var(--mainFgColor) !important;
 }
 
 #presentation p {
@@ -96,14 +96,14 @@ p {
 }
 
 .author-title {
-  color: var(--mainBgColor);
+  color: var(--foreground-white);
   text-decoration: none;
 }
 nav ul {
   display: none;
 }
 header nav {
-  width: 68%;
+  /* width: 60%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,12 +112,12 @@ header nav {
 }
 
 .active {
-  background-color: white;
+  background-color: var(--foreground-white);
   color: black !important;
   border-radius: 5px;
 }
 
-main {
+main, nav {
   width: 95%;
   margin: auto;
 }
@@ -129,8 +129,7 @@ main {
 }
 
 #intro p {
-  color: var(--secondary-fg);
-  /* opacity: 0.85; */
+  color: var(--mainFgColor);
   line-height: 150%;
 }
 
@@ -148,11 +147,13 @@ button {
   background-color: var(--main-red);
   border-radius: 15px;
   color: var(--foreground-white);
+  box-sizing: border-box;
+  border: 1px solid var(--main-red);
   transition: background-color 0.35s ease-in-out;
 }
 
 button:hover {
-  background-color: #171e2b;
+  background-color: var(--main-black);
 }
 
 .content {
@@ -171,10 +172,11 @@ button:hover {
   padding-right: 5px;
 }
 
-.author-title a {
+.author-title h1 {
   font-family: "montserratregular", sans-serif;
   font-weight: 700;
   font-size: 1.8em;
+  margin-bottom: 5px;
 }
 
 .author-title span {
@@ -243,6 +245,7 @@ body {
   padding: 10px 20px;
   background-color: #fafafa;
   border-radius: 20px;
+  color: var(--main-black);
 }
 
 #apps-3 .card-view:last-of-type {
@@ -251,15 +254,15 @@ body {
 }
 
 .card-view .view-on-github {
-  color: var(--mainBgColor);
-
+  text-decoration: none;
+  color: var(--foreground-white);
+  width: 180px;
+  background-color: var(--main-black);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  width: 180px;
-  background-color: var(--mainFgColor);
+
   border-radius: 10px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease-in-out, scale 0.3s ease-in-out;
@@ -310,12 +313,11 @@ body {
   width: 16px;
 }
 /* Footer section */
-/* Footer Styling */
 footer {
   text-align: center;
   padding: 20px;
   background-color: #fafafa;
-  color: var(--mainFgColor);
+  color: var(--main-black);
 }
 
 footer img {
@@ -336,7 +338,7 @@ footer a {
 
 /* General Media queries */
 @media screen and (min-width: 960px) {
-  main {
+  main, nav {
     width: 80%;
   }
   nav ul {
@@ -345,11 +347,92 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
-  main {
+  main, nav {
     width: 60%;
   }
 
   .cards {
     grid-template-columns: auto auto;
   }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: background-color 400ms, color 100ms !important;
+  transition-delay: 0 !important;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+:root {
+ /* LIGHT THEME COLORS */
+  --light-theme-base: #bdbdbd;
+  --light-theme-background: #fff;
+  --light-theme-shadow: rgba(18, 18, 18, .3);
+  --light-theme-primary: #6200ee;
+  --light-theme-primary-dark: #3700b3;
+  --light-theme-secondary: #03dac6;
+  --light-theme-secondary-dark: #018786;
+  --light-theme-error-color: #b00020;
+ /* DARK THEME COLORS */
+  --dark-theme-base: #1d1d1d;
+  --dark-theme-background: #121212;
+  --dark-theme-shadow: rgba(255, 255, 255, .3);
+  --dark-theme-primary: #bb86fc;
+  --dark-theme-primary-dark: #3700b3;
+  --dark-theme-secondary: #03dac6;
+  --dark-theme-error-color: #cf6679;
+}
+
+#toggle-dark-mode {
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.panel-element {
+  background-color: var(--foreground-white);
+  box-shadow: 2px 2px 5px var(--light-theme-shadow);
+}
+.toggle-contents-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-wrapper {
+  background-color: rgba(128, 128, 128, 0.45);
+  border: 2px solid var(--main-red);
+  border-radius: 35px;
+  display: flex;
+  margin: 0.5em 1.25em;
+  width: 3.5em;
+  min-width: 3.5em;
+}
+.toggle-dot {
+  background-color: var(--foreground-white);
+  box-shadow: 1px 1px 3px var(--light-theme-shadow);
+  margin: 2px;
+  border-radius: 35px;
+  height: 1.5em;
+  width: 1.5em;
+}
+.toggle-is-active {
+  justify-content: flex-end;
+}
+
+.is-dark-mode {
+  transform: all .4s ease-in-out;
+  background-color: var(--main-red);
 }
