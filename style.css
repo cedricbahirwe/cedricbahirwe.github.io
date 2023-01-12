@@ -140,10 +140,8 @@ main, nav {
 }
 
 button {
-  border: none;
   outline: none;
   padding: 15px;
-  border-radius: 15px;
   background-color: var(--main-red);
   border-radius: 15px;
   color: var(--foreground-white);
@@ -206,8 +204,8 @@ li a {
 
 :root,
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Used to hide views in different contexts */
@@ -215,7 +213,7 @@ body {
   display: none;
 }
 
-/* Gloabl Project Selector */
+/* Global Project Selector */
 .b-btn:hover {
   background-color: var(--main-red);
 }
@@ -264,13 +262,13 @@ body {
   justify-content: center;
 
   border-radius: 10px;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease-in-out, scale 0.3s ease-in-out;
 }
 
 .card-view .view-on-github:hover {
   scale: 0.98;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-view .view-on-github img {
@@ -364,7 +362,7 @@ footer a {
 }
 .toggle-dot {
   background-color: var(--foreground-white);
-  box-shadow: 1px 1px 3px var(--light-theme-shadow);
+  box-shadow: 1px 1px 3px var(--main-black);
   margin: 2px;
   border-radius: 35px;
   height: 1.5em;
@@ -372,10 +370,9 @@ footer a {
 }
 
 .is-dark-mode {
-  transform: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   background-color: var(--main-red);
 }
-
 
 /* General Media queries */
 @media screen and (min-width: 960px) {
@@ -402,5 +399,5 @@ html.transition *,
 html.transition *:before,
 html.transition *:after {
   transition: background-color 400ms, color 100ms !important;
-  transition-delay: 0 !important;
+  transition-delay: 0s !important;
 }
