@@ -18,11 +18,11 @@
 
 ## Contribute
 
-I would love you for the contribution to this project.
+- PRs are welcome ✨
 
 ## Meta
 
-Cédric Bahirwe – [@cedricbahirwe](https://twitter.com/cedricbahirwe) – cedbahirwe@gmail.com
+Made by Cédric Bahirwe – [@cedricbahirwe](https://twitter.com/cedricbahirwe)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
