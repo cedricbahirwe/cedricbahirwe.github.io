@@ -3,158 +3,429 @@
 <!-- Use Semantic HTML, whenever possible,📓  -->
 <!-- Write clean and clear code, with open (source) mind 😀 -->
 <!-- Explore, Learn, Have fun and Inspire -->
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    
-    <link rel="stylesheet" href="Styles/normalize.css">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/normalize.css" />
+    <link href="style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="images/author-shortcut.png" />
     <title>Cédric Bahirwe</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <nav id="navbar">
-            <div class="author-title">
-                <a>Cédric Bahirwe</a>
-                <span>Software Engineer/iOS Engineer</span>
-            </div>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="html/blog.html" target="_blank">Blog</a></li>
-                <li><a href="https://www.github.com/cedricbahirwe" target="_blank">Github</a></li>
-                <li><a href="html/about.html">About</a></li>
-            </ul>
-
-        </nav>
+      <nav id="navbar">
+        <div class="author-title">
+          <a>Cédric Bahirwe</a>
+          <span>Software Engineer/iOS Engineer</span>
+        </div>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="html/blog.html" target="_blank">Blog</a></li>
+          <li>
+            <a href="https://www.github.com/cedricbahirwe" target="_blank"
+              >Github</a
+            >
+          </li>
+          <li><a href="html/about.html">About</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <section id="intro">
+        <div id="presentation">
+          <p>
+            Hi!, I'm Cédric, I live in Kigali. <br />
+            I love creating iOS and Vapor apps, and open source some of my Swift
+            code 🚀
+          </p>
+          <p>
+            I am a Software Engineer with 4+ years of experience building
+            softwares for Apple Ecosystem using Swift and its frameworks.
+          </p>
+          <p>
+            I’m passionate about software architecture, quality and clean code
+            and reusability of optimize my work.
+          </p>
 
-        <div id="intro">
-
-            <img src="/images/author-circle.png" alt="Cédric Bahirwe Picture">
-            <div id="presentation">
+          <a
+            href="https://docs.google.com/document/d/1iSoYrVcLVy5HcMoNanvYUM5JnLK1HnXJbi6IdV58Ti0"
+            target="_blank"
+          >
+            <button class="cta-btn-1">Check My Resume</button>
+          </a>
+        </div>
+      </section>
+      <div class="my-apps">
+        <section id="apps-1">
+          <h1>My apps</h1>
+          <div class="cards">
+            <section class="card-view">
+              <img
+                src="projects-images/dialer.jpeg"
+                alt="Dialt It App"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>Dial It</h2>
                 <p>
-                    I am an iOS Engineer with 4+ years of experience in Software
-                    engineering, building softwares for iPhone, Ipad and Apple Watch using
-                    most popular apple frameworks , and third-party libraries.
+                  No need to memorize all USSD codes! Dial It got you covered!
+                  Dial It is your Rwandan USSD companion app that provides USSD
+                  codes to perform the following operations
+                </p>
+                <a
+                  href="https://apps.apple.com/us/app/appdab/id1612325183"
+                  class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class="h-10 store-badge"
+                /></a>
+              </div>
+            </section>
+            <section class="card-view">
+              <img
+                src="projects-images/auca-transcript.webp"
+                alt="AUCA Transcript App"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>AUCA Transcript</h2>
+                <p>
+                  AUCA Transcript helps AUCA Students to have access to their
+                  transcript in just a few clicks, with the ability to share it
+                  in one simple click.
+                </p>
+                <a href="https://apps.apple.com/app/id6443527716" class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class="h-10 store-badge"
+                /></a>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section id="apps-2">
+          <h1>Apps done for others</h1>
+          <div class="cards">
+            <section class="card-view">
+              <img
+                src="images/safeboda.webp"
+                alt="Download on the App Store"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>SafeBoda</h2>
+                <p>
+                  SafeBoda improves the welfare and livelihoods by empowering
+                  people by providing value to consumers and drivers with
+                  financial services, payments and other on-demand services to
+                  keep Africa moving forward.
+                </p>
+                <a
+                  href="https://apps.apple.com/us/app/safeboda/id1274389246"
+                  class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class="h-10 store-badge"
+                /></a>
+              </div>
+            </section>
+            <section class="card-view">
+              <img
+                src="images/wawmuzik.webp"
+                alt="Hoppz App"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>WAW MUZIK</h2>
+                <p>
+                  No. 1 streaming app for Ivorian music that highlights the
+                  whole world of local music. Music is much more than songs, it
+                  is the life of artists who make their talent available to
+                  music lovers every day in this digital age.
+                </p>
+                <a
+                  href="https://apps.apple.com/us/app/hoppz/id1574190122"
+                  class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class=""
+                /></a>
+              </div>
+            </section>
+            <section class="card-view">
+              <img
+                src="images/hoppz.webp"
+                alt="Hoppz App"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>Hoppz</h2>
+                <p>
+                  A virtual nightlife guide providing real-time information on
+                  the hottest bars near you. Hoppz provides real-time
+                  information to both bars and their current or potential
+                  customers to plan for the perfect night out.
+                </p>
+                <a
+                  href="https://apps.apple.com/us/app/hoppz/id1574190122"
+                  class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class=""
+                /></a>
+              </div>
+            </section>
+            <section class="card-view">
+                <img
+                  src="images/guhemba.webp"
+                  alt="Guhemba App"
+                  draggable="false"
+                  class="card-view-img"
+                />
+                <div class="card-view-content">
+                  <h2>Guhemba</h2>
+                  <p>
+                    A Pan-Africa full-featured payment and money transfer solution
+                    designed for merchant-pay and personal transfers, including
+                    numerous other advanced 'fintech' and personal finance
+                    features.
+                  </p>
+                  <a
+                    href="https://apps.apple.com/us/app/guhemba/id1566090499"
+                    class=""
+                    ><img
+                      src="images/appstore-icon.svg"
+                      alt="Download on the App Store"
+                      class=""
+                  /></a>
+                </div>
+              </section>
+          </div>
+        </section>
+        <section id="apps-3">
+          <h1>My open source projects</h1>
+          <div class="cards">
+            <section class="card-view">
+              <img
+                src="projects-images/dialer.jpeg"
+                alt="Dialt It App"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>Dial It</h2>
+                <p>
+                  No need to memorize all USSD codes! Dial It got you covered!
+                  Dial It is your Rwandan USSD companion app that provides USSD
+                  codes to perform the following operations
+                </p>
+                <a
+                  href="https://apps.apple.com/us/app/appdab/id1612325183"
+                  class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class="h-10 store-badge"
+                /></a>
+              </div>
+            </section>
+            <section class="card-view">
+              <img
+                src="projects-images/auca-transcript.webp"
+                alt="AUCA Transcript App"
+                draggable="false"
+                class="card-view-img"
+              />
+              <div class="card-view-content">
+                <h2>AUCA Transcript</h2>
+                <p>
+                  AUCA Transcript helps AUCA Students to have access to their
+                  transcript in just a few clicks, with the ability to share it
+                  in one simple click.
+                </p>
+                <a href="https://apps.apple.com/app/id6443527716" class=""
+                  ><img
+                    src="images/appstore-icon.svg"
+                    alt="Download on the App Store"
+                    class="h-10 store-badge"
+                /></a>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="get-in-touch">
+          <h1>Get in touch</h1>
+          <div class="cards">
+            <section class="card-view">
+              <div class="card-view-content">
+                <p>
+                  <img
+                    src="images/twitter.svg"
+                    alt="Twitter logo"
+                    class="service-icon"
+                  />&nbsp;You can find me as @cedricbahirwe on
+                  <a href="https://twitter.com/cedricbahirwe" rel="me">
+                    Twitter
+                  </a>
+                  and
+                  <a href="https://www.linkedin.com/in/cedricbahirwe" rel="me"
+                    >LinkedIn</a
+                  >
+                  where I occasionally post something about my apps and
+                  projects.
                 </p>
                 <p>
-                    I’m passionate about mobile apps architecture, quality and clean code and always discovering ways to
-                    optimize my work.
+                  <img
+                    src="images/github-icon.png"
+                    alt="GitHub logo"
+                    class="service-icon"
+                  />&nbsp;You can also follow me and my open source projects on
+                  GitHub where I go by the name
+                  <a href="https://github.com/cedricbahirwe">cedricbahirwe</a>.
                 </p>
+                <p>
+                  <img
+                    src="images/email.png"
+                    alt="Email icon"
+                    class="service-icon"
+                  />&nbsp;If you are neither into Twitter or GitHub, you can
+                  always send me an email at
+                  <a href="mailto:cedbahirwe@gmail.com">cedbahirwe@gmail.com</a
+                  >.
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
 
-                <a href="https://docs.google.com/document/d/1iSoYrVcLVy5HcMoNanvYUM5JnLK1HnXJbi6IdV58Ti0"
-                    target="_blank">
-                    <button class="w-btn">Check My Resume</button>
-                </a>
-            </div>
+      <div class="content">
+        <div class="projects">
+          <h1>Some ideas</h1>
+          <!-- Dial It -->
+          <div class="project-container">
+            <a href="/html/dialit.html" target="_blank">
+              <div class="project">
+                <img
+                  src="projects-images/dialit-template.png"
+                  alt="Dialt It App"
+                  draggable="false"
+                />
+                <h1>Dial It</h1>
+                <p>
+                  Your companion app that drastically simplifies the time
+                  complexity to activate MTN bundles as well as Pay and Transfer
+                  money using MTN mobile money.
+                </p>
+                <div class="tags">
+                  <span>SwiftUI</span>
+                  <span>MessageUI</span>
+                  <span>Contacts</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DOIT -->
+          <div class="project-container">
+            <a href="https://github.com/cedricbahirwe/DOIT" target="_blank">
+              <div class="project">
+                <img
+                  src="projects-images/doit.png"
+                  alt="Do It App"
+                  draggable="false"
+                />
+                <h1>DOIT</h1>
+                <p>
+                  A TO-DO app with ability to Create, Update, Read, Delete tasks
+                  and save tasks on local storage.
+                </p>
+                <div class="tags">
+                  <span>SwiftUI</span>
+                  <span>UserDefaults</span>
+                  <span>CoreData</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- AppLock -->
+          <div class="project-container">
+            <a href="https://github.com/ABCIncs/AppLock" target="_blank">
+              <div class="project">
+                <img
+                  src="images/applock.jpeg"
+                  alt="AppLock Package"
+                  draggable="false"
+                />
+                <h1>AppLock</h1>
+                <p>
+                  AppLock is a simple SwiftUI framework that makes it easy to
+                  create a <span class="highlight">PinCode</span> user
+                  interface. It provides a struct, "AppLockView", that can be
+                  shown inside a view or a sheet for better user experience.
+                </p>
+                <p>
+                  Natively, Apple only provides <b>Touch ID </b>and
+                  <b>Face ID</b> as authentication mechanisms and only brings
+                  <b>Passcode</b>
+                  when authentication with those ones have failed; The goal here
+                  was to provide a fully fledged Component that can be
+                  customized and reuse with ease.
+                </p>
+                <div class="tags">
+                  <span>SwiftUI</span>
+                  <span>SPM</span>
+                  <span>Authentication</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="project-container">
+            <a
+              href="https://github.com/cedricbahirwe/TicTacToe"
+              target="_blank"
+            >
+              <div class="project">
+                <img
+                  src="images/tictactoe.png"
+                  alt="TicTacToe Game"
+                  draggable="false"
+                />
+                <h1>TicTacToe</h1>
+                <p>A simple game using a matrix agnostic approach</p>
+                <div class="tags">
+                  <span>SwiftUI</span>
+                  <span>Agnostic Matrix Approach</span>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="content">
-            <div class="projects">
-                <h1>Some ideas</h1>
-                <!-- Dial It -->
-                <div class="project-container">
-                    <a href="/html/dialit.html" target="_blank">
-                        <div class="project">
-                            <img src="projects-images/dialit-template.png" alt="Dialt It App" draggable="false">
-                            <h1> Dial It </h1>
-                            <p>
-                                Your companion app that drastically simplifies the time complexity to
-                                activate MTN bundles as well as Pay and Transfer money using MTN mobile money.
-                            </p>
-                            <div class="tags">
-                                <span>SwiftUI</span>
-                                <span>MessageUI</span>
-                                <span>Contacts</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- DOIT -->
-                <div class="project-container">
-                    <a href="https://github.com/cedricbahirwe/DOIT" target="_blank">
-                        <div class="project">
-                            <img src="projects-images/doit.png" alt="Do It App" draggable="false">
-                            <h1> DOIT </h1>
-                            <p>
-                                A TO-DO app with ability to Create, Update, Read, Delete tasks and save tasks on local
-                                storage.
-
-                            </p>
-                            <div class="tags">
-                                <span>SwiftUI</span>
-                                <span>UserDefaults</span>
-                                <span>CoreData</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- AppLock -->
-                <div class="project-container">
-                    <a href="https://github.com/ABCIncs/AppLock" target="_blank">
-                        <div class="project">
-                            <img src="images/applock.jpeg" alt="AppLock Package" draggable="false">
-                            <h1> AppLock </h1>
-                            <p>
-                                AppLock is a simple SwiftUI framework that makes it easy to create a <span
-                                    class="highlight">PinCode</span> user interface.
-                                It provides a struct,
-                                "AppLockView", that can be shown inside a view or a sheet for better user experience.
-                            </p>
-                            <p>
-                                Natively, Apple only provides <b>Touch ID </b>and <b>Face ID</b> as authentication
-                                mechanisms and only brings <b>Passcode</b>
-                                when authentication with those ones have failed; The goal here was to provide a fully
-                                fledged Component that can be customized and reuse with ease.
-                            </p>
-                            <div class="tags">
-                                <span>SwiftUI</span>
-                                <span>SPM</span>
-                                <span>Authentication</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="project-container">
-                    <a href="https://github.com/cedricbahirwe/TicTacToe" target="_blank">
-                        <div class="project">
-                            <img src="images/tictactoe.png" alt="TicTacToe Game" draggable="false">
-                            <h1> TicTacToe </h1>
-                            <p>
-                                A simple game using a matrix agnostic approach
-                            </p>
-                            <div class="tags">
-                                <span>SwiftUI</span>
-                                <span>Agnostic Matrix Approach</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </main>
 
     <footer>
-        <img src="images/author.png" alt="Cédric Bahirwe Profile Picture">
-        <p>Hi there! My name is <b>Cédric Bahirwe.</b></p>
-        <p>I'm a <b>Swift Developer</b>, SwiftUI enthusiast</p>
-        <p>
-            Reach out or follow me on
-            <a target="_blank" href="https://twitter.com/cedricbahirwe">Twitter</a> or <a target="_blank"
-                href="https://github.com/cedricbahirwe">Github.</a>
-        </p>
-        <p>Cédric Bahirwe &copy 2022. All rights reserved.</p>
+      <img src="images/author.png" alt="Cédric Bahirwe Profile Picture" />
+      <p>I am an <b>iOS & Vapor Developer</b></p>
+      <p>Cédric Bahirwe &copy 2023. All rights reserved.</p>
     </footer>
     <script src="jscript/main.js"></script>
-</body>
-
+  </body>
 </html>
