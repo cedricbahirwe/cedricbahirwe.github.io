@@ -1,89 +1,81 @@
 .author {
-    height: 400px;
-    width: 100%;
-    background: #333 url(../images/authbg.jpeg) no-repeat center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+  height: 400px;
+  width: 100%;
+  background: #333 url(../images/authbg.jpeg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
+
 .author img {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 .author h1 {
-    color: white;
-    font-weight: 400;
+  color: var(--foreground-white);
+  font-weight: 400;
 }
 
 h2 {
-    font-size: 36px;
-}
-h3 {
-    font-size: 30px;
-}
-.intro, .contact {
-    width: 68%;
-    margin: auto;
-    text-align: center;
-}
-a {
-    color: var(--main-red);
-    text-decoration: none;
+  font-size: 36px;
 }
 
-@media (max-width:800px) {
-    .intro {
-        width: 90%;
-    }
- }
+.intro,
+.contact {
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: var(--main-red);
+  text-decoration: none;
+}
 
 main h2 {
-    text-align: center;
+  text-align: center;
 }
- .hot-projects {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    margin: auto auto 100px;
+.hot-projects {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: auto auto 50px;
 }
 
- .hot-project {
-    text-align: center;
-    width: 100%;
-    transition: .4s all;
-    margin: 7px;
- }
+.hot-project {
+  text-align: center;
+  width: 100%;
+  transition: 0.4s all;
+  margin: 7px;
+}
 
 .hot-project:hover {
-    color: var(--main-red);
-    transform: scale(1.05);
+  color: var(--main-red);
+  transform: scale(1.05);
 }
 
- .hot-project img {
-     width: 200px;
-     height: 200px;
-     border-radius: 10px;
-     background: white;
-  } 
-
-/* @media screen and (max-width: 992px) {
-    .hot-projects{
-        width: 90%;
-        margin: auto;
-        grid-template-columns: repeat(3,auto);
-    }
+.hot-project img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background: white;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 500px) {
     .hot-projects {
-        grid-template-columns: repeat(2,auto);
+      grid-template-columns: repeat(2, auto);
     }
+  }
+  
+@media screen and (min-width: 992px) {
+  .hot-projects {
+    margin: auto;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
-@media screen and  (max-width: 500px){
-    .hot-projects {
-        grid-template-columns: repeat(1,auto);
-    }
-} */
+@media screen and (min-width: 1500px) {
+  .hot-projects {
+    grid-template-columns: repeat(4, auto);
+  }
+}
