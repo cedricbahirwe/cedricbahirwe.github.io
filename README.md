@@ -1,20 +1,21 @@
-### Hi there, I'm Cédric Bahirwe 👋
+# Hi there, I'm Cédric Bahirwe 👋
 
-### 🎉📖 A dummy vanilla personal website.
+### 🎉📖 This is my beautiful personal [website](https://cedricbahirwe.github.io/).
 
 
 ## ✍🏽 TODOs 💻
 
-- Work on Better Standard Design ( Responsiveness, Colors, ...)
 - Build project with Open Source Design thinking (Provide a ready to go website which allows more customizations if needed).
 - Work on SEO ( Search Engine Optimization ) and Semantics.
+- Convert website to use a modern technology/framework like `React` for front-end)
 
-## 🔐 Future Features:
+## 🔐 Dones ✅
 
 - Light/Dark Mode Implementation
-- Build a stable version of the website with a modern technology/framework (thinking of `React` for front-end)
+- Standard Design ( Responsiveness, Colors, Typography ...)
 
-## Contribute
+
+## Contribution
 
 - PRs are welcome ✨
 
