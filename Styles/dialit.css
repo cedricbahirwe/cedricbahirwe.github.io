@@ -1,55 +1,34 @@
 
-:root {
+/* :root {
     --headerBgColor: rgba(255, 255, 255, 0.95);
     --mainBgColor: 245, 245, 247;
     --main-red: rgb(164, 0, 25);
     --mainFgColor: rgba(0,0,0,0.9);
-}
+} */
 
-body {
-    background-color: var(--mainBgColor);
+#navbar a { 
+    transition: all 0.3s ease-in-out;
 }
-
-header {
-    background-color: white; 
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+#navbar a:hover {
+    scale: 1.1;
 }
-
-header li a {
-    color: var(--mainFgColor);
-}
-
-a:hover {
- color: var(--main-red);
-}
-
 #preview {
     display: flex;
     margin: auto;
     padding: 20px 10%;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
-    background-color:rgba(0, 0, 0, 0.1);
-    text-align: center
-    
+    text-align: center   
 }
 
 #preview-description {
     text-align: center;
 }
 
-
-
-#appstore-link {
-    display: inline-block;
-    background-color: #000;
-    color: white;
-    padding: 20px 20px;
-    border-radius: 10px;
+#appstore-link img {
+    width: 200px;
+    height: 60px;
 }
-
-
 
 /*  Features section */
 
@@ -84,6 +63,10 @@ a:hover {
     text-align: center;
 }
 
+#support {
+
+}
+
 #contact-us {
     display: flex;
     align-items: center;
@@ -102,13 +85,7 @@ a:hover {
     text-align: center;
 }
 
-
 /* Others */
-
-.section-container{
-    margin: 100px 0;
-}
-
 hr {
     height: 3px;
     width: 100px;
@@ -119,7 +96,6 @@ hr {
 .d-title {
     text-align: center;
 }
-
 
 .fas, .fab {
     color: var(--main-red);
