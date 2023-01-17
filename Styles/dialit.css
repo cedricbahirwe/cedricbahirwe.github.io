@@ -1,126 +1,90 @@
-
-:root {
-    --headerBgColor: rgba(255, 255, 255, 0.95);
-    --mainBgColor: 245, 245, 247;
-    --main-red: rgb(164, 0, 25);
-    --mainFgColor: rgba(0,0,0,0.9);
+#navbar a {
+  transition: all 0.3s ease-in-out;
 }
-
-body {
-    background-color: var(--mainBgColor);
-}
-
-header {
-    background-color: white; 
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-}
-
-header li a {
-    color: var(--mainFgColor);
-}
-
-a:hover {
- color: var(--main-red);
+#navbar a:hover {
+  scale: 1.1;
 }
 
 #preview {
-    display: flex;
-    margin: auto;
-    padding: 20px 10%;
-    align-items: center;
-    justify-content: space-around;
-    height: 90vh;
-    background-color:rgba(0, 0, 0, 0.1);
-    text-align: center
-    
+  display: flex;
+  margin: auto;
+  padding: 20px 10%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 #preview-description {
-    text-align: center;
+  text-align: center;
 }
 
-
-
-#appstore-link {
-    display: inline-block;
-    background-color: #000;
-    color: white;
-    padding: 20px 20px;
-    border-radius: 10px;
+#appstore-link img {
+  width: 200px;
+  height: 60px;
 }
 
-
-
+.section-container h1:first-of-type {
+  text-align: center;
+}
 /*  Features section */
 
 #features {
-    display: flex;
-    align-items: center;
-    max-width: 80%;
-    margin: 40px auto;
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: 40px auto;
 }
 
 #features h2 {
-    margin: 12px;
+  margin: 12px;
 }
-#features p  {
-    margin: 0;
+#features p {
+  margin: 0;
 }
 
 #features > div {
-    flex: 1 1 auto;
-    text-align: center;
-    margin: 5px;  /* and that, will result in a 10px gap */
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 5px; /* and that, will result in a 10px gap */
 }
 
 #features p {
-    font-size: 17pt;
-    line-height: 100%;
+  font-size: 17pt;
+  line-height: 100%;
 }
 
 /* Support section */
 #support {
-
-    text-align: center;
+  text-align: center;
 }
 
 #contact-us {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 80%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#contact-us .contact,
+#features .feature i {
+  color: var(--main-red);
 }
 
 #contact-us .contact {
-    margin: 40px;
+  margin: 40px;
 }
 
 /* Privacy Policy */
 
 #privacy {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* Others */
-
-.section-container{
-    margin: 100px 0;
-}
-
 hr {
-    height: 3px;
-    width: 100px;
-    background-color: var(--main-red);
-    border: none;
-}
-
-.d-title {
-    text-align: center;
-}
-
-
-.fas, .fab {
-    color: var(--main-red);
+  height: 3px;
+  width: 100px;
+  background-color: var(--main-red);
+  border: none;
 }
