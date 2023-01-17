@@ -6,12 +6,11 @@
 }
 
 #preview {
-  display: flex;
-  margin: auto;
-  padding: 20px 10%;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  grid-gap: 20px;
+  padding: 20px 5%;
 }
 
 #preview-description {
@@ -31,7 +30,6 @@
 #features {
   display: flex;
   align-items: center;
-  max-width: 80%;
   margin: 40px auto;
 }
 
@@ -62,7 +60,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
   margin: 0 auto;
 }
 
