@@ -246,6 +246,10 @@ body {
   color: var(--main-black);
 }
 
+.card-view img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 #apps-3 .card-view:last-of-type {
   display: none;
   visibility: hidden;
