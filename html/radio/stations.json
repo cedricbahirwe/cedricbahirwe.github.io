@@ -1,0 +1,37 @@
+{
+    "stations":
+    [
+     {
+     "name": "Radio Okapi",
+     "streamURL": "http://rs1.radiostreamer.com:8000/listen.pls",
+     "imageURL": "radio-okapi.jpeg",
+     "desc": "Informations pour la paix et le développment de la RDC",
+     "longDesc": "Radio Okapi est la radio de la Mission des Nations Unies pour la stabilisation en République démocratique du Congo (MONUSCO)",
+     "website": "https://www.radiookapi.net"
+     },
+     {
+     "name": "Top Congo FM",
+     "streamURL": "https://topcongofm2.ice.infomaniak.ch/topcongofm2-64.mp3",
+     "imageURL": "topcongo-fm.jpeg",
+     "desc": "La fréquence utile",
+     "longDesc": "Top Congo FM est une station de radio diffusée à Kinshasa, en République démocratique du Congo, qui fournit des informations, des informations et des divertissements communautaires.",
+     "website": "https://topcongo.live"
+     },
+     {
+     "name": "Radio Tv Mix Congolaise",
+     "streamURL": "http://37.59.42.207:8080/",
+     "imageURL": "rationtv-mix-congo.jpeg",
+     "desc": "DE LA MUSIQUE CONGOLAISE",
+     "longDesc": "Radio TV Mix Congolaise, votre radio 100% musique Congolaise 24H/24. RADIO MIX CONGOLAISE la legende de la musique congolaise.",
+     "website": "https://radiomixcongolaise.com/"
+     },
+     {
+     "name": "Trace FM Congo Rock",
+     "streamURL": "https://n08a-eu.rcs.revma.com/u98b8f5q54zuv",
+     "imageURL": "trace-rdc.jpeg",
+     "desc": "Les Meilleures Musiques Locales et Urbaines",
+     "longDesc": "LES RADIOS TRACE OFFRENT LES MEILLEURES MUSIQUES LOCALES, URBAINES AVEC LES MEILLEURS SONS INTERNATIONAUX, HIP-HOP ET R&B.",
+     "website": "https://rdc.trace.fm/"
+     }
+    ]
+}
