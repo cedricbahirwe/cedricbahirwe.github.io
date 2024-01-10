@@ -1,4 +1,4 @@
-### 🎉📖 Personal Static Website [website](https://cedricbahirwe.github.io/).
+### 🎉📖 Personal Static [Website](https://cedricbahirwe.github.io/).
 
 ## Meta
 
