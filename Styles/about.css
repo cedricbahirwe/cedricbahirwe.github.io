@@ -1,81 +1,78 @@
 .author {
-  height: 400px;
-  width: 100%;
-  background: #333 url(../images/authbg.jpeg) no-repeat center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+	height: 400px;
+	width: 100%;
+	background: #333 url(../images/authbg.jpeg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .author img {
-  width: 300px;
-  height: auto;
-}
-.author h1 {
-  color: var(--foreground-white);
-  font-weight: 400;
+	width: 300px;
+	height: auto;
+	margin: 2rem 0;
 }
 
 h2 {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 .intro,
 .contact {
-  margin: auto;
-  text-align: center;
+	margin: auto;
+	text-align: center;
 }
 
 a {
-  color: var(--main-red);
-  text-decoration: none;
+	color: var(--main-red);
+	text-decoration: none;
 }
 
 main h2 {
-  text-align: center;
+	text-align: center;
 }
 .hot-projects {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  margin: auto auto 50px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	margin: auto auto 50px;
 }
 
 .hot-project {
-  text-align: center;
-  width: 100%;
-  transition: 0.4s all;
-  margin: 7px;
+	text-align: center;
+	width: 100%;
+	transition: 0.4s all;
+	margin: 7px;
 }
 
 .hot-project:hover {
-  color: var(--main-red);
-  transform: scale(1.05);
+	color: var(--main-red);
+	transform: scale(1.05);
 }
 
 .hot-project img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background: white;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	background: white;
 }
 
 @media screen and (min-width: 500px) {
-    .hot-projects {
-      grid-template-columns: repeat(2, auto);
-    }
-  }
-  
+	.hot-projects {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
 @media screen and (min-width: 992px) {
-  .hot-projects {
-    margin: auto;
-    grid-template-columns: repeat(3, auto);
-  }
+	.hot-projects {
+		margin: auto;
+		grid-template-columns: repeat(3, auto);
+	}
 }
 
 @media screen and (min-width: 1500px) {
-  .hot-projects {
-    grid-template-columns: repeat(4, auto);
-  }
+	.hot-projects {
+		grid-template-columns: repeat(4, auto);
+	}
 }
