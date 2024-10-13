@@ -5,9 +5,13 @@
 	scale: 1.1;
 }
 
+#dialit-home {
+	display: none;
+}
+
 #preview {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1fr;
 	align-items: center;
 	grid-gap: 20px;
 	padding: 20px 5%;
@@ -28,8 +32,9 @@
 /*  Features section */
 
 #features {
-	display: flex;
+	display: grid;
 	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
 	margin: 40px auto;
 }
 
@@ -41,9 +46,8 @@
 }
 
 #features > div {
-	flex: 1 1 auto;
 	text-align: center;
-	margin: 5px; /* and that, will result in a 10px gap */
+	padding: 10px;
 }
 
 #features p {
@@ -57,10 +61,9 @@
 }
 
 #contact-us {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
 }
 
 #contact-us .contact,
@@ -69,7 +72,7 @@
 }
 
 #contact-us .contact {
-	margin: 40px;
+	margin: 20px;
 }
 
 /* Privacy Policy */
@@ -78,10 +81,28 @@
 	text-align: center;
 }
 
+main {
+	/* background-color: brown; */
+}
 /* Others */
 hr {
 	height: 3px;
 	width: 100px;
 	background-color: var(--main-red);
 	border: none;
+}
+
+@media screen and (min-width: 700px) {
+	/* main,
+	nav {
+		width: 60%;
+	} */
+
+	#preview {
+		grid-template-columns: auto auto;
+	}
+
+	#dialit-home {
+		display: block;
+	}
 }
