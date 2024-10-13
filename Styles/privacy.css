@@ -1,22 +1,23 @@
 body {
-  /* text-align: center; */
-  width: 90%;
-  margin: auto;
-  color: black;
-  background-color: var(--mainBgColor);
+	width: 90%;
+	margin: auto;
 }
 
 body h1 {
-  text-align: left;
+	text-align: left;
+}
+
+a {
+	color: var(--main-red);
 }
 
 /* General Media queries */
 @media screen and (min-width: 760px) {
-  body {
-    width: 70%;
-  }
+	body {
+		width: 70%;
+	}
 
-  body h1 {
-    text-align: center;
-  }
+	body h1 {
+		text-align: center;
+	}
 }

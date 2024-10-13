@@ -5,16 +5,13 @@
 	scale: 1.1;
 }
 
-#dialit-home {
-	display: none;
-}
-
 #preview {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
 	grid-gap: 20px;
 	padding: 20px 5%;
+	place-items: center;
 }
 
 #preview-description {
@@ -34,7 +31,7 @@
 #features {
 	display: grid;
 	align-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+	grid-template-columns: repeat(auto-fit, minmax(190px, 2fr));
 	margin: 40px auto;
 }
 
@@ -100,9 +97,5 @@ hr {
 
 	#preview {
 		grid-template-columns: auto auto;
-	}
-
-	#dialit-home {
-		display: block;
 	}
 }
