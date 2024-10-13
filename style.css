@@ -20,21 +20,15 @@ body {
 }
 
 h1 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: bold;
-	font-style: normal;
+	font-family: "MontserratBold", sans-serif;
 }
 
 h2 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: bold;
-	font-style: normal;
+	font-family: "MontserratBold", sans-serif;
 }
 
 h4 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
-	font-style: normal;
+	font-family: "MontserratSemiBold", sans-serif;
 }
 
 a {
@@ -82,7 +76,6 @@ h1 {
 
 p {
 	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
 	font-size: 18pt;
 	line-height: 120%;
 }
@@ -164,15 +157,13 @@ button:hover {
 }
 
 .author-title h1 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
+	font-family: "MontserratBold", sans-serif;
 	font-size: 1.8em;
 	margin-bottom: 5px;
 }
 
 .author-title span {
 	font-family: "Montserrat", sans-serif;
-	font-weight: 200;
 	font-size: 1.3em;
 }
 
@@ -187,12 +178,12 @@ li {
 }
 
 li a {
+	font-family: "Montserrat", sans-serif;
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 10px 16px;
 	text-decoration: none;
-	font-family: "Montserrat", sans-serif;
 }
 
 :root,
