@@ -20,20 +20,20 @@ body {
 }
 
 h1 {
-	font-family: "montserratbold", Arial, sans-serif;
-	font-weight: normal;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 	font-style: normal;
 }
 
 h2 {
-	font-family: "montserratbold", Arial, sans-serif;
-	font-weight: normal;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 	font-style: normal;
 }
 
 h4 {
-	font-family: "montserratsemibold", Arial, sans-serif;
-	font-weight: normal;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
 	font-style: normal;
 }
 
@@ -81,7 +81,8 @@ h1 {
 }
 
 p {
-	font-family: "montserratregular", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
 	font-size: 18pt;
 	line-height: 120%;
 }
@@ -163,14 +164,14 @@ button:hover {
 }
 
 .author-title h1 {
-	font-family: "montserratregular", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 1.8em;
 	margin-bottom: 5px;
 }
 
 .author-title span {
-	font-family: "montserratregular", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 200;
 	font-size: 1.3em;
 }
@@ -191,7 +192,7 @@ li a {
 	text-align: center;
 	padding: 10px 16px;
 	text-decoration: none;
-	font-family: "montserratregular", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 :root,
@@ -210,7 +211,7 @@ body {
 	background-color: var(--main-red);
 }
 .cta-btn-1 {
-	font-family: "montserratregular", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .my-apps {
@@ -290,6 +291,7 @@ body {
 	list-style: disc;
 	overflow: visible;
 	margin-left: 12px;
+	font-family: "Montserrat", sans-serif;
 }
 
 #get-in-touch ul li a {
