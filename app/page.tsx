@@ -1,6 +1,4 @@
 import { BlogPosts } from 'app/components/posts'
-import Link from 'next/link'
-import { LocalPosts } from './components/local-posts'
 
 function ArrowIcon() {
   return (
@@ -40,8 +38,7 @@ export default function Page() {
         <p className="ml-2 h-7">Check my resume</p>
       </a>
       <div className="my-8">
-        <LocalPosts />
-        {/* <BlogPosts /> */}
+        <BlogPosts />
       </div>
     </section>
   )

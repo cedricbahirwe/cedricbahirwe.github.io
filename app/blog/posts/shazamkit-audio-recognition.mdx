@@ -1,0 +1,145 @@
+---
+title: 'Building Music Recognition with ShazamKit and AVFoundation'
+publishedAt: '2022-11-04'
+summary: 'Learn how to implement audio matching capabilities in your iOS apps using ShazamKit and AVFoundation frameworks.'
+---
+
+**ShazamKit** is a recent Apple Framework announced during WWDC 2021, that brings **audio matching** capabilities within your app. You can make any prerecorded audio recognizable by building your own custom catalogue using audio from podcasts, videos, and more or match music to the millions of songs in Shazam's vast catalogue.
+
+Today, we are going to build a simple music-matching recognizer. The idea is to build a component that is independent of the UI framework being used (SwiftUI or UIKit).
+
+We will create a `Swift` class named creatively `ShazamRecognizer` that will have some simple tasks to perform:
+
+1. Create the properties that are going to help us in building our class
+2. Request Permission to record audio using the `AVFoundation` framework
+3. Start Recording and Send the record to `ShazamKit` for recognition matching
+4. Handle the response from ShazamKit (**Success** when a match was found or **Error** when no match was found)
+5. Display our result in a UI (e.g: SwiftUI or UIKit)
+
+## Create the properties that are going to help us in building our class
+
+```swift
+final class ShazamRecognizer: NSObject, ObservableObject {
+    // 1. Audio Engine
+    private let audioEngine = AVAudioEngine()
+    
+    // 2. Shazam Engine
+    private let shazamSession = SHSession()
+    
+    // 3. UI state purpose
+    @Published private(set) var isRecording = false
+    
+    // 4. Success Case
+    @Published private(set) var matchedTrack: ShazamTrack?
+    
+    // 5. Failure Case
+    @Published var error: ErrorAlert? = nil
+}
+```
+
+In the above declarations, we have:
+
+1. We create the `audioEngine` which is used to `start` and `stop` the recording
+2. We create the `shazamSession` which is used to perform the **matching** process
+3. We use `isRecording` to track whether or not there is an ongoing recording operation
+4. We create a variable of custom type [`ShazamTrack`](https://github.com/cedricbahirwe/iOS-Concepts/blob/master/P01-Shazam/P01-Shazam/Model/ShazamTrack.swift) to store our result in case of success
+5. In case of failure, we store the error in the `error` variable of type [`ErrorAlert`](https://github.com/cedricbahirwe/iOS-Concepts/blob/master/P01-Shazam/P01-Shazam/Model/ErrorAlert.swift)
+
+## Request Permission to record audio using the AVFoundation framework
+
+```swift
+func listenToMusic() {
+    // 1.
+    let audioSession = AVAudioSession.sharedInstance()
+    // 2. 
+    audioSession.requestRecordPermission { status in
+        if status {
+            // 3.
+            self.recordAudio()
+        } else {
+            // 4. 
+            self.error = ErrorAlert("Please Allow Microphone Access !!!")
+        }
+    }
+}
+```
+
+## Start Recording and Send the record to ShazamKit for recognition
+
+```swift
+private func recordAudio() {
+    // 1. If the `audioEngine` is running, stop it and return
+    if audioEngine.isRunning {
+        self.stopAudioRecording()
+        return
+    }
+
+    // 2. Create a inputNode to listen to
+    let inputNode = audioEngine.inputNode
+    let format = inputNode.outputFormat(forBus: .zero)
+
+    // 3. Removes the tap if already installed
+    inputNode.removeTap(onBus: .zero)
+
+    // 4. Install an audio tap on the bus
+    inputNode.installTap(onBus: .zero,
+                         bufferSize: 1024,
+                         format: format)
+    { buffer, time in
+        self.shazamSession.matchStreamingBuffer(buffer, at: time)
+    }
+
+    audioEngine.prepare()
+
+    do {
+        try audioEngine.start()
+        DispatchQueue.main.async {
+            self.recording = true
+        }
+    } catch {
+        self.error = ErrorAlert(error.localizedDescription)
+    }
+}
+
+private func stopAudioRecording() {
+    audioEngine.stop()
+    isRecording = false
+}
+```
+
+## Handle the response from ShazamKit
+
+```swift
+override init() {
+    super.init()
+    shazamSession.delegate = self
+}
+
+extension ShazamRecognizer: SHSessionDelegate {
+    func session(_ session: SHSession, didFind match: SHMatch) {
+        DispatchQueue.main.async {
+            if let firstItem = match.mediaItems.first {
+                self.matchedTrack = ShazamTrack(firstItem)
+                self.stopAudioRecording()
+            }
+        }
+    }
+
+    func session(_ session: SHSession, didNotFindMatchFor signature: SHSignature, error: Error?) {
+        DispatchQueue.main.async {
+            self.error = ErrorAlert(error?.localizedDescription ?? "No Match found!")
+            self.stopAudioRecording()
+        }
+    }
+}
+```
+
+At this point, We are pretty much done with our audio recognition system!👏🏻💪🏼. We are ready to use it in our application, no matter the UI framework.
+
+For this example, I've used `SwiftUI` for a quick prototype, but you can use `UIKit` as well without any particular effort.
+
+> You can find the [full demo project](https://github.com/cedricbahirwe/iOS-Concepts/tree/master/P01-Shazam)
+
+## Conclusion
+
+`ShazamKit` framework has a lot to offer, but in this article, we have just scratched the tip of the iceberg, I hope you have learned something today :)
