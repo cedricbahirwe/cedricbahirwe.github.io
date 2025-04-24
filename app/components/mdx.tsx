@@ -26,6 +26,23 @@ function Table({ data }) {
   )
 }
 
+// components/Callout.tsx
+type CalloutProps = {
+  emoji?: string
+  children: React.ReactNode
+}
+
+export default function Callout({ emoji = '💡', children }: CalloutProps) {
+  return (
+    <div className="border-l-4 border-[#A40019] bg-[#f9f9f917] px-4 rounded">
+      <div className="flex items-center space-x-2">
+        <span className="text-2xl">{emoji}</span>
+        <div className="text-base text-black-800 text-red-500">{children}</div>
+      </div>
+    </div>
+  )
+}
+
 function CustomLink(props) {
   let href = props.href
 
@@ -97,6 +114,7 @@ let components = {
   a: CustomLink,
   code: Code,
   Table,
+  Callout
 }
 
 export function CustomMDX(props) {

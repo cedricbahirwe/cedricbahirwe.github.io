@@ -1,0 +1,53 @@
+---
+title: 'How do Static Analysis Tools suffer from False Negatives and False Positives'
+publishedAt: '2023-02-14'
+summary: 'Understanding the limitations of static analysis tools and how they can produce both false negatives and false positives in code analysis.'
+---
+
+![Article Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1676322500822/9300410e-4740-4102-b6af-1ab0233e79d4.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)
+
+## Introduction
+
+Static analysis tools, also known as linting tools such as [ES Lint](https://eslint.org/) (for JavaScript) or [SwiftLint](https://realm.github.io/SwiftLint/) (for Swift), are software programs that analyze source code for potential issues, such as bugs, security vulnerabilities, and coding standards violations, without actually executing the code. While these tools can be very effective in finding and fixing problems in code, they are not perfect and can suffer from both **false negatives** (i.e. missed issues) and **false positives** (i.e. reported issues that are not actually problems).
+
+**False negatives** can occur when a static analysis tool fails to detect an issue that is present in the code. This can be due to limitations in the tool's ability to accurately analyze the code, or because the tool does not have enough information to detect the issue.
+
+**False positives** can occur when a static analysis tool reports an issue that is not actually a problem. This can happen because the tool is not able to accurately distinguish between valid and invalid code patterns, or because the tool is not able to properly interpret the intended behaviour of the code.
+
+## Example (in Python)
+
+Here's a simple example in [Python](https://www.python.org/) to demonstrate the concept of false negatives and false positives in static analysis tools.  
+Consider the following code:
+
+```python
+def divide(a, b):
+    return a / b
+
+print(divide(10, 2))
+print(divide(10, 0))
+```
+
+A static analysis tool might run on this code and report no issues because it cannot detect that the second call to `divide` will raise a `ZeroDivisionError` exception in `Python` or a runtime error in `Swift`. This is an example of a false negative because the issue of dividing by zero is present in the code, but the static analysis tool fails to detect it.
+
+On the other hand, if the static analysis tool reports an issue with the following code:
+
+```python
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
+print(divide(10, 2))
+print(divide(10, 0))
+```
+
+because it may not recognize that raising an error in response to a divide by zero is the intended behaviour. This would be an example of a false positive, as the code is correct, but the static analysis tool reports a problem where none exists.
+
+## Conclusion
+
+To reduce the number of **false negatives** and **false positives**, it's important to choose a static analysis tool that is well-suited to the programming language and application being analyzed and to configure the tool appropriately for your specific needs.  
+Additionally, it's important to regularly review the results of the static analysis and carefully evaluate each reported issue to determine whether it is a true problem or a false positive.
+
+---
+
+I hope you learned something new from this post, more to come but if you have a question or a suggestion, you can find me on [Twitter](https://twitter.com/cedricbahirwe).

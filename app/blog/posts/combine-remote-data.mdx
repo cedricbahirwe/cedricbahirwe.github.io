@@ -1,0 +1,151 @@
+---
+title: 'How to fetch remote data using Combine Framework in SwiftUI'
+publishedAt: '2022-09-02'
+summary: 'Learn how to effectively fetch and handle remote data using Combine Framework in SwiftUI applications.'
+---
+
+During WWDC 2019, Apple introduces `Combine`  which provides a declarative Swift API for processing values over time. 
+These values can represent many kinds of asynchronous events. `Combine` declares publishers to expose values that can change over time, and subscribers to receive those values from the publishers.
+
+Today, we will focus on how we can utilize `combine`'s publishers and subscribers system to fetch remote data from a remote data source and populate the data to our UI.
+
+We'll keep it simple and stupid!; I chose the [Random Data API](https://random-data-api.com/), and we'll be using their [Users Endpoint](https://random-data-api.com/documentation) which provides some mock information for a random user.
+
+### Step1: Create the data models for our API
+We are going to need the `RemoteUser` and the `Address` models
+
+```swift
+// MARK: - RemoteUser
+struct RemoteUser: Identifiable, Codable {
+    let id: Int
+    let firstName, lastName: String
+    let username, email: String
+    let phoneNumber: String
+    let address: Address
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case username, email
+        case phoneNumber = "phone_number"
+        case address
+    }
+}
+
+// MARK: - Address
+struct Address: Codable {
+    let city: String
+    let state: String
+    let country: String
+
+    enum CodingKeys: String, CodingKey {
+        case city
+        case state, country
+    }
+
+    func formatted() -> String {
+       return "\(city), \(state), \(country)"
+    }
+}
+``` 
+
+### Step2: Introduce a `fetch` function
+This function does the heavy lifting for us, taking an input of type `URLRequest` as a parameter and returning an output of type `AnyPublisher<T, Error>`
+
+```swift
+func perform<T: Decodable>(_ request: URLRequest) -> AnyPublisher<T, Error> {
+    return URLSession.shared
+        .dataTaskPublisher(for: request) // Returns a publisher that wraps a URL session data task for a given URL request.
+        .map { $0.data }
+        .decode(type: T.self, decoder: JSONDecoder())
+        .receive(on: DispatchQueue.main) // Receive elements on the Main Queue
+        .eraseToAnyPublisher()
+}
+``` 
+
+### Step3: Build our simple UI and Run
+Basically, in our `ContenView`, we will use a simple `List` where we shall be showing our user information represented by a `UserRowView`
+
+```swift
+import Combine
+
+struct ContentView: View {
+    @State private var users = [RemoteUser]() // Store our users
+    @State private var isFetchingData = false // Manage the fetching spinner
+    @State private var cancellables = Set<AnyCancellable>()
+
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(users) { user  in
+                    UserRowView(user)
+                }
+
+                if isFetchingData {
+                    ProgressView()
+                        .frame(maxWidth: .infinity)
+                }
+            }
+            .navigationTitle("\(users.count) Active Users")
+            .onAppear(perform: fetchSomeData) // fetch data when view appears
+        }
+    }
+
+    // Some raw URLRequest for testing purpose 
+    private func getURLRequest() -> URLRequest {
+        var request = URLRequest(url: URL(string: "https://random-data-api.com/api/v2/users")!)
+        request.httpMethod = "GET"
+        return request
+    }
+
+    // Perform network call
+    private func fetchSomeData() {
+        guard users.count < 50 else { return }
+        let result: AnyPublisher<RemoteUser, Error> = perform(getURLRequest())
+        isFetchingData = true
+
+        result.sink { _ in
+        } receiveValue: { item in
+            print(item)
+            self.users.append(item)
+            isFetchingData = false
+            fetchSomeData() // Fetch new data when request has completed
+        }
+        .store(in: &cancellables) // Stores a type-erasing cancellable instance.
+    }
+}
+``` 
+
+```swift
+struct UserRowView: View {
+    private let user: RemoteUser
+    init(_ user: RemoteUser) {
+        self.user = user
+    }
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Name: \(user.firstName) \(user.lastName)")
+                .fontWeight(.bold)
+            Text("Username: \(Text("@\(user.username)").foregroundColor(.accentColor))")
+                .fontWeight(.semibold)
+            Text("Tél: \(user.phoneNumber)")
+                .fontWeight(.medium)
+            Text("Address: \(user.address.formatted())")
+                .italic()
+                .foregroundColor(.secondary)
+        }
+        .padding(8)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .cornerRadius(10)
+    }
+}
+``` 
+
+You will observe that on every successful request, another request will be made until the number of users reaches `50` as specified in the code.
+
+![Article Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1662150713242/ZMA7O5ktb.png)
+
+## Conclusion
+
+`Combine` framework has a lot to offer, but in this article, we have just scratched the tip of the iceberg, I hope you have learned something today :)

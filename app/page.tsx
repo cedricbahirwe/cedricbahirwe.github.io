@@ -1,5 +1,4 @@
 import { BlogPosts } from 'app/components/posts'
-import Link from 'next/link'
 
 function ArrowIcon() {
   return (
@@ -25,7 +24,7 @@ export default function Page() {
         Cédric Bahirwe
       </h1>
       <p className="mb-4">
-        {`I’m Cédric! I love crafting seamless iOS experiences and am currently diving into the world of Machine Learning & AI. I believe in the power of data and machine learning to create impactful solutions.`}
+        {`I’m Cédric! I love crafting seamless iOS experiences and am currently diving into the world of Machine Learning & AI.`}
       </p>
 
 
