@@ -20,13 +20,22 @@ function ArrowIcon() {
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+      <h1 className="mb-6 text-2xl font-semibold tracking-tighter">
         Cédric Bahirwe
       </h1>
-      <p className="mb-4">
-        {`I’m Cédric! I love crafting seamless iOS experiences and am currently diving into the world of Machine Learning & AI.`}
+
+      <p className='mb-4'>
+        I’m a curious engineer who enjoys building thoughtful, high-performing mobile experiences across iOS, Android and Web.
+        I care just as much about how things work under the hood as I do about how they feel in the hands of real people.
+      </p>
+      <p className='mb-4'>
+        For me, great software isn't just about clean architecture or flawless execution — it’s about connection. It’s about making things that are useful, intuitive, and quietly delightful.
+        <br />
       </p>
 
+      <p className="mb-4">
+        I believe tech should serve people, not the other way around. That belief guides the work I do and the problems I choose to solve.
+      </p>
 
       <a
         className="flex items-center underline text-red-700 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
