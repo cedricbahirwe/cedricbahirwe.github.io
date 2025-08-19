@@ -41,7 +41,7 @@ export default function Page() {
         className="flex items-center underline text-red-700 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
         rel="noopener noreferrer"
         target="_blank"
-        href="https://docs.google.com/document/d/1410CnPGS9tPWG-Sahj3R-15tZkBW93iTHcZWn8htlwQ/"
+        href="https://drive.google.com/file/d/1SGU8Z_011bKyZha8JnIDiOAKanm2YlYb/view?usp=drive_link/"
       >
         <ArrowIcon />
         <p className="ml-2 h-7">Check my resume</p>
