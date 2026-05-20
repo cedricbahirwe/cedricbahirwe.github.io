@@ -1,27 +1,22 @@
 import { baseUrl } from "app/sitemap";
-import { getBlogPosts } from "app/blog/utils";
+import { getAllBlogPosts } from "app/blog/posts";
+
+function getAbsoluteUrl(href: string) {
+	return new URL(href, baseUrl).toString();
+}
 
 export async function GET() {
-	let allBlogs = await getBlogPosts();
+	let allBlogs = getAllBlogPosts();
 
 	const itemsXml = allBlogs
-		.sort((a, b) => {
-			if (
-				new Date(a.metadata.publishedAt) >
-				new Date(b.metadata.publishedAt)
-			) {
-				return -1;
-			}
-			return 1;
-		})
 		.map(
 			(post) =>
 				`<item>
-          <title>${post.metadata.title}</title>
-          <link>${baseUrl}/blog/${post.slug}</link>
-          <description>${post.metadata.summary || ""}</description>
+          <title>${post.title}</title>
+          <link>${getAbsoluteUrl(post.href)}</link>
+          <description>${post.summary || ""}</description>
           <pubDate>${new Date(
-				post.metadata.publishedAt
+				post.publishedAt
 			).toUTCString()}</pubDate>
         </item>`
 		)
